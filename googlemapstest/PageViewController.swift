@@ -58,7 +58,7 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         var buttonPosition = CGPointMake(padding.width * 0.5, padding.height)
         let buttonIncrement = buttonSize.width + padding.width
       
-        var dates: [String] = [" ", " ", " ", " ", "1916", "1970", "1974", " ", " ", " "]
+        var dates: [String] = [" ", "1916", "1970", "1974", " "]
 
         //let hueIncrement = 1.0 / CGFloat(buttonCount)
         //var newHue = hueIncrement
@@ -104,11 +104,14 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         setupPageControl()
         
         // Set the scrolling pageview
-        let scrollingView = timelineButtonsView(CGSizeMake(50.0,50.0), buttonCount: 10) // This generates the buttons
+        let scrollingView = timelineButtonsView(CGSizeMake(50.0,50.0), buttonCount: 5) // This generates the buttons
         buttonScroll.contentSize = scrollingView.frame.size // Makes sure we actually scroll
         buttonScroll.addSubview(scrollingView) //Adds our stuff to the View
         buttonScroll.showsHorizontalScrollIndicator = true
         buttonScroll.indicatorStyle = .Default
+        
+        buttonScroll.contentOffset = CGPointMake((buttonScroll.contentSize.width / 2) - buttonScroll.frame.size.width, 0.0);
+        
         view.bringSubviewToFront(buttonScroll)
     }
     
@@ -118,6 +121,7 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
             let controller = storyboard!.instantiateViewControllerWithIdentifier("ItemController\(i)") as! PageItemController
             controller.itemIndex = i
             controllers.append(controller)
+            println(controller)
             
         }
     }
