@@ -83,7 +83,10 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
             let image = UIImage(named: "button_image.png") as UIImage?
             button.setBackgroundImage(image, forState: UIControlState.Normal)
             button.setTitle(dates[i], forState: .Normal)
-            button.addTarget(self, action: "timelineButtonPressed:", forControlEvents: .TouchUpInside)
+            
+            if (dates[i] != " ") {
+                button.addTarget(self, action: "timelineButtonPressed:", forControlEvents: .TouchUpInside)
+            }
             buttonView.addSubview(button)
         }
         // End button adding code
