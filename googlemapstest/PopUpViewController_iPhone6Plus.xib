@@ -4,8 +4,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopUpViewControllerSwift">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopUpViewController">
             <connections>
+                <outlet property="messageBox" destination="XI3-G6-Z2C" id="dgH-WO-Lqk"/>
                 <outlet property="popUpView" destination="HxJ-fg-egd" id="Afl-LM-Hsl"/>
                 <outlet property="view" destination="iN0-l3-epB" id="1Li-NQ-5sE"/>
             </connections>
@@ -37,11 +38,11 @@
                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XI3-G6-Z2C">
                                     <rect key="frame" x="8" y="8" width="304" height="524"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <mutableString key="text">Booker T. Washington High School opens in September 1916. The school serves African American students, including Ward One children, from first grade to ninth grade.
+                                    <string key="text">Booker T. Washington High School opens in September 1916. The school serves African American students, including Ward One children, from first grade to ninth grade.
  
 Olympia Mill Village is a company town located south of Ward One. Olympia School serves the children of textile workers. Before the passage of child labor laws, many of the students would have toiled in the mill rather than attend school.
  
-In rural South Carolina, African American children often attend Rosenwald Schools. Philanthropist Julius Rosenwald, the president of Sears, Roebuck, and Company, provides funding for nearly 5,000 schools across the South, including over 450 in South Carolina.</mutableString>
+In rural South Carolina, African American children often attend Rosenwald Schools. Philanthropist Julius Rosenwald, the president of Sears, Roebuck, and Company, provides funding for nearly 5,000 schools across the South, including over 450 in South Carolina.</string>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 </textView>

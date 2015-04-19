@@ -5,9 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopUpViewControllerSwift" customModule="googlemapstest" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopUpViewController">
             <connections>
-                <outlet property="popUpView" destination="Pon-Sf-YGC" id="QXk-gu-0HH"/>
+                <outlet property="messageBox" destination="QKB-Ke-qUO" id="ceu-uj-Jvf"/>
+                <outlet property="popUpView" destination="Pon-Sf-YGC" id="Syn-zF-Ely"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -35,14 +36,9 @@
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1T6-mp-gr5">
                             <rect key="frame" x="8" y="0.0" width="267" height="425"/>
                             <subviews>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKB-Ke-qUO">
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" fixedFrame="YES" editable="NO" text="Insert text here" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKB-Ke-qUO">
                                     <rect key="frame" x="0.0" y="0.0" width="267" height="425"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <mutableString key="text">Booker T. Washington High School opens in September 1916. The school serves African American students, including Ward One children, from first grade to ninth grade.
- 
-Olympia Mill Village is a company town located south of Ward One. Olympia School serves the children of textile workers. Before the passage of child labor laws, many of the students would have toiled in the mill rather than attend school.
- 
-In rural South Carolina, African American children often attend Rosenwald Schools. Philanthropist Julius Rosenwald, the president of Sears, Roebuck, and Company, provides funding for nearly 5,000 schools across the South, including over 450 in South Carolina.</mutableString>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 </textView>
@@ -70,6 +66,7 @@ In rural South Carolina, African American children often attend Rosenwald School
                 <constraint firstItem="Pon-Sf-YGC" firstAttribute="top" secondItem="1" secondAttribute="top" constant="75" id="vSs-rq-9C6"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="75" y="318"/>
         </view>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

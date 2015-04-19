@@ -25,7 +25,18 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         // Launch a pop up
         // Could easily use the sender.tag to specify specific content.
         
-       var message = "Booker T. Washington High School opens in September 1916. The school serves African American students, including Ward One children, from first grade to ninth grade."
+        var message: String
+        
+        switch(sender.tag) {
+        case 1:
+            message = "Booker T. Washington High School opens in September 1916. The school serves African American students, including Ward One children, from first grade to ninth grade.\n\nOlympia Mill Village is a company town located south of Ward One. Olympia School serves the children of textile workers. Before the passage of child labor laws, many of the students would have toiled in the mill rather than attend school.\n\nIn rural South Carolina, African American children often attend Rosenwald Schools. Philanthropist Julius Rosenwald, the president of Sears, Roebuck, and Company, provides funding for nearly 5,000 schools across the South, including over 450 in South Carolina."
+        case 2:
+            message = "In September of 1970, Booker T Washington desegregates and see its first non-African American students. By the fall of 1971, the student body will be almost evenly split between black and white students. \n\nWhile Columbia officially began desegregation in August of 1964, the courts did not order the twenty-one school districts of South Carolina to integrate until September 1970. But the process is not peaceful: white and black students get into a large fight at A.C. Flora High School, with other racially-motivated altercations reported throughout the state. \n\nOn September 12th, 1970, the University of Southern California Trojans become to the first fully integrated football team to play the University of Alabama. The team crushes legendary coach Bear Bryant’s all-white Crimson Tide team, forever changing college athletics in the South."
+        case 3:
+            message = "In 1974, Booker T. Washington High School, a center of education for young African Americans in Columbia, SC, closes due to public school desegregation in the state and the expansion of the University of South Carolina.\n\nA few years later, in 1979, Columbia’s City Planning Department applies for an Urban Development Action Grant under the federal government’s Urban Development Action Grants initiative, which ends urban renewal in the mid-70s. In its application, Columbia’s planning department places emphasis on the avoidance of discrimination and promotes public housing dispersal.\n\nIn 1974, The Housing and Community Redevelopment Act creates federal grant programs that focuses on improving blighted areas rather than demolishing them. This act reflects the developing negative attitude toward urban renewal policies that resulted from renewal’s high volume of residential displacement."
+        default:
+            message = " "
+        }
         
         if UIScreen.mainScreen().bounds.size.width > 320 {
             if UIScreen.mainScreen().scale == 3 {
