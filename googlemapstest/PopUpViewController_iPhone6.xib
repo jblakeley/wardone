@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopUpViewControllerSwift">
             <connections>
-                <outlet property="logoImg" destination="ddu-ny-h6P" id="6vY-Y3-2fw"/>
-                <outlet property="messageLabel" destination="d9y-sm-xub" id="Y3U-RS-wXc"/>
                 <outlet property="popUpView" destination="FvE-39-pUU" id="drV-PD-bNg"/>
                 <outlet property="view" destination="iN0-l3-epB" id="WrW-nh-j87"/>
             </connections>
@@ -19,10 +16,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FvE-39-pUU">
-                    <rect key="frame" x="27" y="141" width="320" height="386"/>
+                    <rect key="frame" x="27" y="75" width="320" height="572"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moA-sG-w9U">
-                            <rect key="frame" x="58" y="336" width="203" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moA-sG-w9U">
+                            <rect key="frame" x="59" y="534" width="203" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="aHx-2t-gNe"/>
                             </constraints>
@@ -34,40 +31,37 @@
                                 <action selector="closePopup:" destination="-1" eventType="touchUpInside" id="h7o-1k-CN6"/>
                             </connections>
                         </button>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ddu-ny-h6P">
-                            <rect key="frame" x="57" y="20" width="206" height="178"/>
-                        </imageView>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="243" translatesAutoresizingMaskIntoConstraints="NO" id="d9y-sm-xub">
-                            <rect key="frame" x="20" y="206" width="280" height="110"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="110" id="Dwz-kW-iwj"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f4p-Tw-ka6">
+                            <rect key="frame" x="3" y="8" width="315" height="507"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhF-3E-v5P">
+                                    <rect key="frame" x="8" y="8" width="299" height="491"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <mutableString key="text">Booker T. Washington High School opens in September 1916. The school serves African American students, including Ward One children, from first grade to ninth grade.
+ 
+Olympia Mill Village is a company town located south of Ward One. Olympia School serves the children of textile workers. Before the passage of child labor laws, many of the students would have toiled in the mill rather than attend school.
+ 
+In rural South Carolina, African American children often attend Rosenwald Schools. Philanthropist Julius Rosenwald, the president of Sears, Roebuck, and Company, provides funding for nearly 5,000 schools across the South, including over 450 in South Carolina.</mutableString>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                            </subviews>
+                        </scrollView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="moA-sG-w9U" secondAttribute="bottom" constant="20" symbolic="YES" id="CfU-vE-qr8"/>
-                        <constraint firstItem="d9y-sm-xub" firstAttribute="leading" secondItem="FvE-39-pUU" secondAttribute="leading" constant="20" symbolic="YES" id="DoN-WE-u9g"/>
-                        <constraint firstItem="moA-sG-w9U" firstAttribute="centerX" secondItem="d9y-sm-xub" secondAttribute="centerX" id="JBY-EJ-JlQ"/>
-                        <constraint firstItem="moA-sG-w9U" firstAttribute="top" secondItem="d9y-sm-xub" secondAttribute="bottom" constant="20" id="RGl-Ta-eqT"/>
-                        <constraint firstItem="d9y-sm-xub" firstAttribute="centerX" secondItem="ddu-ny-h6P" secondAttribute="centerX" id="U5R-iv-cyJ"/>
-                        <constraint firstItem="moA-sG-w9U" firstAttribute="leading" secondItem="FvE-39-pUU" secondAttribute="leading" constant="58" id="Ve1-OS-7O4"/>
-                        <constraint firstItem="d9y-sm-xub" firstAttribute="top" secondItem="ddu-ny-h6P" secondAttribute="bottom" constant="8" symbolic="YES" id="WHi-qO-CHb"/>
-                        <constraint firstItem="ddu-ny-h6P" firstAttribute="leading" secondItem="FvE-39-pUU" secondAttribute="leading" constant="57" id="rkT-M8-hOC"/>
-                        <constraint firstAttribute="trailing" secondItem="d9y-sm-xub" secondAttribute="trailing" constant="20" symbolic="YES" id="su7-Rw-2vX"/>
-                        <constraint firstItem="ddu-ny-h6P" firstAttribute="top" secondItem="FvE-39-pUU" secondAttribute="top" constant="20" symbolic="YES" id="th5-OE-zhL"/>
+                        <constraint firstAttribute="bottom" secondItem="moA-sG-w9U" secondAttribute="bottom" constant="8" id="CfU-vE-qr8"/>
+                        <constraint firstAttribute="centerX" secondItem="moA-sG-w9U" secondAttribute="centerX" id="o2y-t5-cyc"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="FvE-39-pUU" secondAttribute="bottom" constant="140" id="R6b-oD-Xs0"/>
+                <constraint firstAttribute="bottom" secondItem="FvE-39-pUU" secondAttribute="bottom" constant="20" id="R6b-oD-Xs0"/>
                 <constraint firstItem="FvE-39-pUU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="27" id="jiN-gm-aGx"/>
                 <constraint firstItem="FvE-39-pUU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sPV-Vy-nUg"/>
-                <constraint firstItem="FvE-39-pUU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="141" id="xRl-Al-rbF"/>
+                <constraint firstAttribute="centerX" secondItem="FvE-39-pUU" secondAttribute="centerX" id="sab-NW-dYC"/>
+                <constraint firstItem="FvE-39-pUU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="75" id="xRl-Al-rbF"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="348.5" y="364.5"/>

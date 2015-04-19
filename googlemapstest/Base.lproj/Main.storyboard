@@ -131,7 +131,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="506"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yWw-L6-CHj">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWw-L6-CHj">
                                 <rect key="frame" x="10" y="8" width="580" height="506"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <mutableString key="text">Booker T. Washington High School opened its doors in 1916 as the second public school in Columbia, South Carolina for African Americans. Built on the corner of Marion and Blossom Streets, the school only offered elementary grades. Then in 1924, it became a standard highschool-the largest public high school for Blacks in South Carolina for many years. Booker T. Washington was also one of the few in the state to be accredited by the Southern Association of Colleges and Secondary Schools. The school closed in 1974 when the University of South Carolina purchased the property, adaptively reusing the structures as a collegiate institution of learning.</mutableString>

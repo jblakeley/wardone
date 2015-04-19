@@ -25,21 +25,22 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         // Launch a pop up
         // Could easily use the sender.tag to specify specific content.
         
+       var message = "Booker T. Washington High School opens in September 1916. The school serves African American students, including Ward One children, from first grade to ninth grade."
         
         if UIScreen.mainScreen().bounds.size.width > 320 {
             if UIScreen.mainScreen().scale == 3 {
                 self.popViewController = PopUpViewController(nibName: "PopUpViewController_iPhone6Plus", bundle: nil)
                 self.popViewController.title = "This is a popup view"
-                self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a popup window for \(sender.tag)", animated: true)
+                self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: message, animated: true)
             } else {
                 self.popViewController = PopUpViewController(nibName: "PopUpViewController_iPhone6", bundle: nil)
                 self.popViewController.title = "This is a popup view"
-                self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a popup window for \(sender.tag)", animated: true)
+                self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: message, animated: true)
             }
         } else {
             self.popViewController = PopUpViewController(nibName: "PopUpViewController", bundle: nil)
             self.popViewController.title = "This is a popup view"
-            self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a popup window for \(sender.tag)", animated: true)
+            self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: message, animated: true)
         }
     }
     
@@ -54,11 +55,15 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         buttonView.frame.size.width = (buttonSize.width + padding.width) * CGFloat(buttonCount)
         buttonView.frame.size.height = (buttonSize.height +  2.0 * padding.height)
         
+        if (buttonView.frame.size.width < self.view.frame.width) {
+            buttonView.frame.size.width = self.view.frame.width + 10
+        }
+        
         // Defines some variables to have buttons at standard distances; Could easily be extended to create an actual timeline (i.e. distance between buttons can be different)
         var buttonPosition = CGPointMake(padding.width * 0.5, padding.height)
         let buttonIncrement = buttonSize.width + padding.width
       
-        var dates: [String] = [" ", "1916", "1970", "1974", " "]
+        var dates: [String] = [" ", "1916", "1970", "1974", " ", " "]
 
         //let hueIncrement = 1.0 / CGFloat(buttonCount)
         //var newHue = hueIncrement
@@ -73,7 +78,10 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
             buttonPosition.x = buttonPosition.x + buttonIncrement
             //button.backgroundColor = UIColor(hue: newHue, saturation: 1.0, brightness: 1.0, alpha: 1.0)
             //newHue = newHue + hueIncrement
-            button.backgroundColor = UIColor(red:(51.0/255.0), green: (51.0/255.0), blue:(51.0/255.0), alpha: 1.0)
+            //button.backgroundColor = UIColor(red:(51.0/255.0), green: (51.0/255.0), blue:(51.0/255.0), alpha: 1.0)
+            
+            let image = UIImage(named: "button_image.png") as UIImage?
+            button.setBackgroundImage(image, forState: UIControlState.Normal)
             button.setTitle(dates[i], forState: .Normal)
             button.addTarget(self, action: "timelineButtonPressed:", forControlEvents: .TouchUpInside)
             buttonView.addSubview(button)
@@ -104,7 +112,7 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         setupPageControl()
         
         // Set the scrolling pageview
-        let scrollingView = timelineButtonsView(CGSizeMake(50.0,50.0), buttonCount: 5) // This generates the buttons
+        let scrollingView = timelineButtonsView(CGSizeMake(50.0,50.0), buttonCount: 6) // This generates the buttons
         buttonScroll.contentSize = scrollingView.frame.size // Makes sure we actually scroll
         buttonScroll.addSubview(scrollingView) //Adds our stuff to the View
         buttonScroll.showsHorizontalScrollIndicator = true
