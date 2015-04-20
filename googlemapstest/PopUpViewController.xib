@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopUpViewController">
             <connections>
+                <outlet property="imageBox" destination="Hao-vn-cTk" id="AmW-BD-NgS"/>
                 <outlet property="messageBox" destination="QKB-Ke-qUO" id="ceu-uj-Jvf"/>
                 <outlet property="popUpView" destination="Pon-Sf-YGC" id="Syn-zF-Ely"/>
                 <outlet property="view" destination="1" id="3"/>
@@ -20,8 +21,33 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pon-Sf-YGC">
                     <rect key="frame" x="19" y="75" width="283" height="483"/>
                     <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1T6-mp-gr5">
+                            <rect key="frame" x="8" y="0.0" width="267" height="437"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hao-vn-cTk">
+                                    <rect key="frame" x="0.0" y="8" width="267" height="184"/>
+                                </imageView>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" scrollEnabled="NO" editable="NO" text="Insert text here" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKB-Ke-qUO">
+                                    <rect key="frame" x="0.0" y="200" width="267" height="37"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="QKB-Ke-qUO" firstAttribute="top" secondItem="1T6-mp-gr5" secondAttribute="top" constant="200" id="9OZ-76-TWy"/>
+                                <constraint firstItem="QKB-Ke-qUO" firstAttribute="leading" secondItem="1T6-mp-gr5" secondAttribute="leading" id="Skx-Eg-R3Y"/>
+                                <constraint firstItem="Hao-vn-cTk" firstAttribute="leading" secondItem="1T6-mp-gr5" secondAttribute="leading" id="itz-T4-MMz"/>
+                                <constraint firstItem="QKB-Ke-qUO" firstAttribute="centerX" secondItem="Hao-vn-cTk" secondAttribute="centerX" id="lIA-jO-Q1J"/>
+                                <constraint firstAttribute="bottom" secondItem="QKB-Ke-qUO" secondAttribute="bottom" id="o5E-qo-FWU"/>
+                                <constraint firstItem="QKB-Ke-qUO" firstAttribute="centerX" secondItem="1T6-mp-gr5" secondAttribute="centerX" id="qsL-7c-W13"/>
+                                <constraint firstAttribute="trailing" secondItem="Hao-vn-cTk" secondAttribute="trailing" id="rIZ-4D-UvQ"/>
+                                <constraint firstItem="Hao-vn-cTk" firstAttribute="top" secondItem="1T6-mp-gr5" secondAttribute="top" constant="8" id="vLb-V8-HYZ"/>
+                                <constraint firstItem="QKB-Ke-qUO" firstAttribute="top" secondItem="Hao-vn-cTk" secondAttribute="bottom" constant="8" id="w1Y-KT-Lx7"/>
+                            </constraints>
+                        </scrollView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0b-SY-EoC">
-                            <rect key="frame" x="58" y="433" width="166" height="30"/>
+                            <rect key="frame" x="58" y="445" width="166" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="UDz-Pr-ILe"/>
                             </constraints>
@@ -33,23 +59,12 @@
                                 <action selector="closePopup:" destination="-1" eventType="touchUpInside" id="eBb-at-Wfl"/>
                             </connections>
                         </button>
-                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1T6-mp-gr5">
-                            <rect key="frame" x="8" y="0.0" width="267" height="425"/>
-                            <subviews>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" fixedFrame="YES" editable="NO" text="Insert text here" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKB-Ke-qUO">
-                                    <rect key="frame" x="0.0" y="0.0" width="267" height="425"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                </textView>
-                            </subviews>
-                        </scrollView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="1T6-mp-gr5" firstAttribute="centerX" secondItem="s0b-SY-EoC" secondAttribute="centerX" id="KHm-jy-r5c"/>
                         <constraint firstItem="s0b-SY-EoC" firstAttribute="leading" secondItem="Pon-Sf-YGC" secondAttribute="leading" constant="58" id="R9y-Kg-fV4"/>
-                        <constraint firstAttribute="bottom" secondItem="s0b-SY-EoC" secondAttribute="bottom" constant="20" symbolic="YES" id="TKl-51-dtq"/>
+                        <constraint firstAttribute="bottom" secondItem="s0b-SY-EoC" secondAttribute="bottom" constant="8" id="TKl-51-dtq"/>
                         <constraint firstItem="s0b-SY-EoC" firstAttribute="top" secondItem="1T6-mp-gr5" secondAttribute="bottom" constant="8" symbolic="YES" id="eOI-MH-Kjl"/>
                         <constraint firstItem="1T6-mp-gr5" firstAttribute="trailing" secondItem="Pon-Sf-YGC" secondAttribute="trailingMargin" id="vC9-wf-Tzl"/>
                         <constraint firstItem="1T6-mp-gr5" firstAttribute="top" secondItem="Pon-Sf-YGC" secondAttribute="top" id="ygT-Mv-SuW"/>
@@ -65,7 +80,7 @@
                 <constraint firstItem="Pon-Sf-YGC" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="qQG-Qc-ae7"/>
                 <constraint firstItem="Pon-Sf-YGC" firstAttribute="top" secondItem="1" secondAttribute="top" constant="75" id="vSs-rq-9C6"/>
             </constraints>
-            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <point key="canvasLocation" x="75" y="318"/>
         </view>
     </objects>

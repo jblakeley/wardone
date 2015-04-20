@@ -13,6 +13,7 @@ import QuartzCore
     
     @IBOutlet weak var popUpView: UIView!
     @IBOutlet weak var messageBox: UITextView!
+    @IBOutlet weak var imageBox: UIImageView!
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -35,7 +36,7 @@ import QuartzCore
         messageBox!.text = message
         messageBox!.font = UIFont(name: "HelveticaNeue-Light", size: 18)
 
-        //logoImg!.image = image
+        imageBox!.image = image
         //messageLabel!.text = message
         if animated {
             self.showAnimate()

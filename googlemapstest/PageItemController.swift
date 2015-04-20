@@ -32,7 +32,7 @@ class PageItemController: UIViewController {
   
   @IBAction func unwindToPage(sender: UIStoryboardSegue)
   {
-    let sourceViewController = sender.sourceViewController
+    let sourceViewController: AnyObject = sender.sourceViewController
     // Pull any data from the view controller which initiated the unwind segue
   }
 }

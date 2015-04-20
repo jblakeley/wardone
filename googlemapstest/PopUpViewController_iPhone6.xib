@@ -2,10 +2,12 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopUpViewController">
             <connections>
+                <outlet property="imageBox" destination="6Tk-Lp-jay" id="5Lm-AI-bAZ"/>
                 <outlet property="messageBox" destination="WhF-3E-v5P" id="q6J-dA-s01"/>
                 <outlet property="popUpView" destination="FvE-39-pUU" id="drV-PD-bNg"/>
                 <outlet property="view" destination="iN0-l3-epB" id="WrW-nh-j87"/>
@@ -19,8 +21,8 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FvE-39-pUU">
                     <rect key="frame" x="27" y="75" width="320" height="572"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moA-sG-w9U">
-                            <rect key="frame" x="59" y="534" width="203" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moA-sG-w9U">
+                            <rect key="frame" x="140" y="534" width="40" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="aHx-2t-gNe"/>
                             </constraints>
@@ -32,27 +34,40 @@
                                 <action selector="closePopup:" destination="-1" eventType="touchUpInside" id="h7o-1k-CN6"/>
                             </connections>
                         </button>
-                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f4p-Tw-ka6">
-                            <rect key="frame" x="3" y="8" width="315" height="507"/>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4p-Tw-ka6">
+                            <rect key="frame" x="3" y="8" width="315" height="518"/>
                             <subviews>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhF-3E-v5P">
-                                    <rect key="frame" x="8" y="8" width="299" height="491"/>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Insert text here." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhF-3E-v5P">
+                                    <rect key="frame" x="8" y="226" width="299" height="37"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <string key="text">Booker T. Washington High School opens in September 1916. The school serves African American students, including Ward One children, from first grade to ninth grade.
- 
-Olympia Mill Village is a company town located south of Ward One. Olympia School serves the children of textile workers. Before the passage of child labor laws, many of the students would have toiled in the mill rather than attend school.
- 
-In rural South Carolina, African American children often attend Rosenwald Schools. Philanthropist Julius Rosenwald, the president of Sears, Roebuck, and Company, provides funding for nearly 5,000 schools across the South, including over 450 in South Carolina.</string>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 </textView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Tk-Lp-jay">
+                                    <rect key="frame" x="8" y="8" width="299" height="210"/>
+                                </imageView>
                             </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="WhF-3E-v5P" secondAttribute="bottom" constant="8" id="Cap-Bl-DHB"/>
+                                <constraint firstItem="WhF-3E-v5P" firstAttribute="top" secondItem="f4p-Tw-ka6" secondAttribute="top" constant="226" id="Ekv-Mn-YpV"/>
+                                <constraint firstItem="6Tk-Lp-jay" firstAttribute="leading" secondItem="f4p-Tw-ka6" secondAttribute="leading" constant="8" id="IKP-PR-dwJ"/>
+                                <constraint firstAttribute="trailing" secondItem="6Tk-Lp-jay" secondAttribute="trailing" constant="8" id="LU4-Vf-GRB"/>
+                                <constraint firstItem="WhF-3E-v5P" firstAttribute="centerX" secondItem="f4p-Tw-ka6" secondAttribute="centerX" id="TTV-3J-xCZ"/>
+                                <constraint firstItem="WhF-3E-v5P" firstAttribute="top" secondItem="6Tk-Lp-jay" secondAttribute="bottom" constant="8" id="cNy-6L-6lN"/>
+                                <constraint firstItem="WhF-3E-v5P" firstAttribute="trailing" secondItem="6Tk-Lp-jay" secondAttribute="trailing" id="dM6-Dy-CgB"/>
+                                <constraint firstItem="6Tk-Lp-jay" firstAttribute="top" secondItem="f4p-Tw-ka6" secondAttribute="top" constant="8" id="kU0-0d-Dqr"/>
+                                <constraint firstItem="WhF-3E-v5P" firstAttribute="leading" secondItem="6Tk-Lp-jay" secondAttribute="leading" id="r1P-ge-8Vq"/>
+                            </constraints>
                         </scrollView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="moA-sG-w9U" secondAttribute="bottom" constant="8" id="CfU-vE-qr8"/>
-                        <constraint firstAttribute="centerX" secondItem="moA-sG-w9U" secondAttribute="centerX" id="o2y-t5-cyc"/>
+                        <constraint firstItem="f4p-Tw-ka6" firstAttribute="leading" secondItem="FvE-39-pUU" secondAttribute="leading" constant="3" id="1ab-rL-LWG"/>
+                        <constraint firstAttribute="bottom" secondItem="f4p-Tw-ka6" secondAttribute="bottom" constant="46" id="DcL-Y9-5mf"/>
+                        <constraint firstItem="f4p-Tw-ka6" firstAttribute="top" secondItem="FvE-39-pUU" secondAttribute="topMargin" id="IzM-km-cKr"/>
+                        <constraint firstItem="f4p-Tw-ka6" firstAttribute="centerX" secondItem="FvE-39-pUU" secondAttribute="centerX" id="rVn-JY-auN"/>
+                        <constraint firstItem="f4p-Tw-ka6" firstAttribute="centerX" secondItem="moA-sG-w9U" secondAttribute="centerX" id="rmm-Gm-PQ8"/>
+                        <constraint firstItem="moA-sG-w9U" firstAttribute="top" secondItem="f4p-Tw-ka6" secondAttribute="bottom" constant="8" symbolic="YES" id="uTv-5H-Yeb"/>
                     </constraints>
                 </view>
             </subviews>
