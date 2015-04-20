@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QZf-Vj-Jvf">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Ward One-->
@@ -13,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zfb-7m-wpe" customClass="GMSMapView">
@@ -44,7 +46,7 @@
                         <viewControllerLayoutGuide type="bottom" id="0Iy-kH-CeC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rWE-9Y-gNh">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -52,6 +54,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pPx-Ll-96Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="254" y="-554"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="lQB-Sa-Jaw">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="fIb-me-ZIR" customClass="PageViewController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J2V-SB-vfn"/>
+                        <viewControllerLayoutGuide type="bottom" id="Puc-Yn-eDl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AMx-X0-4vF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ikt-A8-Sgj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2917" y="-691"/>
         </scene>
         <!--Pano View Controller-->
         <scene sceneID="iJy-mS-ahS">
@@ -62,7 +82,7 @@
                         <viewControllerLayoutGuide type="bottom" id="mcX-Rv-AmM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Cjt-XZ-rKh">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -74,7 +94,9 @@
         <!--Page View Controller-->
         <scene sceneID="ULe-KY-1zg">
             <objects>
-                <pageViewController storyboardIdentifier="PageController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="uKM-65-PFZ" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="PageController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="uKM-65-PFZ" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZJ-B7-vfH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2037" y="149"/>
@@ -100,29 +122,39 @@
         <!--ViewController0-->
         <scene sceneID="Fhm-UJ-8dC">
             <objects>
-                <viewController storyboardIdentifier="ItemController0" title="ViewController0" id="QwV-Nc-heT" customClass="PageItemController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ItemController0" autoresizesArchivedViewToFullSize="NO" title="ViewController0" definesPresentationContext="YES" id="QwV-Nc-heT" customClass="PageItemController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="EY0-ce-dei"/>
-                        <viewControllerLayoutGuide type="bottom" id="hoQ-Il-fEM"/>
+                        <viewControllerLayoutGuide type="top" id="ehO-Un-FHh"/>
+                        <viewControllerLayoutGuide type="bottom" id="3ie-K7-Xuv"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="l5p-oO-s7J">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="PLG-0I-qFg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="506"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vx-XA-4Aw">
-                                <rect key="frame" x="8" y="44" width="304" height="480"/>
-                                <string key="text">Booker T. Washington High School opened its doors in 1916 as the second public school in Columbia, South Carolina for African Americans. Built on the corner of Marion and Blossom Streets, the school only offered elementary grades. Then in 1924, it become a standard high school—the largest public high school for Blacks in South Carolina for many years. Booker T. Washington was also one of the few in the state to be accredited by the Southern Association of Colleges and Secondary Schools. The school closed in 1974 when the University of South Carolina purchased the property, adaptively reusing the structure as a collegiate institution of learning.</string>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWw-L6-CHj">
+                                <rect key="frame" x="10" y="8" width="580" height="506"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Booker T. Washington High School opened its doors in 1916 as the second public school in Columbia, South Carolina for African Americans. Built on the corner of Marion and Blossom Streets, the school only offered elementary grades. Then in 1924, it became a standard highschool-the largest public high school for Blacks in South Carolina for many years. Booker T. Washington was also one of the few in the state to be accredited by the Southern Association of Colleges and Secondary Schools. The school closed in 1974 when the University of South Carolina purchased the property, adaptively reusing the structures as a collegiate institution of learning.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
+                        <constraints>
+                            <constraint firstItem="yWw-L6-CHj" firstAttribute="width" secondItem="PLG-0I-qFg" secondAttribute="width" constant="-20" id="6c5-W3-E1B"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="yWw-L6-CHj" secondAttribute="bottom" constant="-8" id="SWC-dx-mYy"/>
+                            <constraint firstItem="yWw-L6-CHj" firstAttribute="top" secondItem="ehO-Un-FHh" secondAttribute="bottom" constant="8" symbolic="YES" id="dzG-fv-f9a"/>
+                            <constraint firstItem="yWw-L6-CHj" firstAttribute="height" secondItem="PLG-0I-qFg" secondAttribute="height" id="igI-OG-0E9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yWw-L6-CHj" secondAttribute="trailing" constant="-8" id="jVa-bj-iMo"/>
+                            <constraint firstAttribute="centerX" secondItem="yWw-L6-CHj" secondAttribute="centerX" id="oLA-zR-MAP"/>
+                        </constraints>
+                    </scrollView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YrB-Wv-vZF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2037" y="837"/>
+            <point key="canvasLocation" x="2031" y="826"/>
         </scene>
         <!--ViewController1-->
         <scene sceneID="xEH-nZ-sLc">
@@ -274,21 +306,22 @@
                         <viewControllerLayoutGuide type="bottom" id="CA0-Pm-HJb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="IMX-Sj-kbW">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdc-m0-tSS">
                                 <rect key="frame" x="-4" y="530" width="608" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="Eor-ky-zTv"/>
-                                    <constraint firstAttribute="width" constant="608" id="Tph-dC-8Tt"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="fdc-m0-tSS" firstAttribute="leading" secondItem="IMX-Sj-kbW" secondAttribute="leadingMargin" constant="-20" id="Aq9-OR-Knz"/>
                             <constraint firstItem="CA0-Pm-HJb" firstAttribute="top" secondItem="fdc-m0-tSS" secondAttribute="bottom" id="G4d-dk-GdJ"/>
                             <constraint firstAttribute="centerX" secondItem="fdc-m0-tSS" secondAttribute="centerX" id="Qm4-kx-MqZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fdc-m0-tSS" secondAttribute="trailing" constant="-20" id="b6c-uo-Ibl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Booker T. Washington High School" id="6dt-wl-Q5N"/>
@@ -299,6 +332,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yn0-Lj-Mqm" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2157" y="-662"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="49j-cz-DZd">
+            <objects>
+                <viewController id="tPd-dG-nk0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JJO-tV-b12"/>
+                        <viewControllerLayoutGuide type="bottom" id="fLa-Uy-C3u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aqZ-na-5gk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vah-RE-q45" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>

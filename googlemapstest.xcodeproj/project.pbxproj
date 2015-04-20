@@ -47,6 +47,7 @@
 		5AB6BF781AE000B0002F75E4 /* QTouchposeApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB6BF761AE000B0002F75E4 /* QTouchposeApplication.m */; };
 		5AB6BF7B1AE001FF002F75E4 /* PopUpViewController_iPhone6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AB6BF791AE001FF002F75E4 /* PopUpViewController_iPhone6.xib */; };
 		5AB6BF7C1AE001FF002F75E4 /* PopUpViewController_iPhone6Plus.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AB6BF7A1AE001FF002F75E4 /* PopUpViewController_iPhone6Plus.xib */; };
+		5AF677F11AE35E82003DB3B6 /* button_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AF677F01AE35E82003DB3B6 /* button_image.png */; };
 		A8B606BD1ADF741D00C71C2E /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B606BB1ADF741D00C71C2E /* VideoController.swift */; };
 		A8B606BE1ADF741D00C71C2E /* btw.m4v in Resources */ = {isa = PBXBuildFile; fileRef = A8B606BC1ADF741D00C71C2E /* btw.m4v */; };
 		A8B606C61ADF8FD300C71C2E /* Booker T. Washington High School..png in Resources */ = {isa = PBXBuildFile; fileRef = A8B606C51ADF8FD300C71C2E /* Booker T. Washington High School..png */; };
@@ -124,6 +125,7 @@
 		5AB6BF761AE000B0002F75E4 /* QTouchposeApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTouchposeApplication.m; sourceTree = "<group>"; };
 		5AB6BF791AE001FF002F75E4 /* PopUpViewController_iPhone6.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpViewController_iPhone6.xib; sourceTree = "<group>"; };
 		5AB6BF7A1AE001FF002F75E4 /* PopUpViewController_iPhone6Plus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpViewController_iPhone6Plus.xib; sourceTree = "<group>"; };
+		5AF677F01AE35E82003DB3B6 /* button_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_image.png; sourceTree = "<group>"; };
 		A8B606BB1ADF741D00C71C2E /* VideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
 		A8B606BC1ADF741D00C71C2E /* btw.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = btw.m4v; sourceTree = "<group>"; };
 		A8B606C51ADF8FD300C71C2E /* Booker T. Washington High School..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Booker T. Washington High School..png"; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		572B90641AB610D600E89CF1 = {
 			isa = PBXGroup;
 			children = (
+				5AF677F01AE35E82003DB3B6 /* button_image.png */,
 				A8B606C51ADF8FD300C71C2E /* Booker T. Washington High School..png */,
 				578BF5BA1AC06B6700F7EE0F /* sample_mpeg4.mp4 */,
 				572B90AF1AB6142E00E89CF1 /* SystemConfiguration.framework */,
@@ -392,6 +395,7 @@
 				5AB6BF7C1AE001FF002F75E4 /* PopUpViewController_iPhone6Plus.xib in Resources */,
 				57F89EB31AB7B54200E6818F /* binoculars.png in Resources */,
 				572B90BA1AB71B8B00E89CF1 /* MarkerInfoView.xib in Resources */,
+				5AF677F11AE35E82003DB3B6 /* button_image.png in Resources */,
 				57F89EAF1AB7B34400E6818F /* w1logo.jpg in Resources */,
 				57F89EB11AB7B35A00E6818F /* Green pin marker icon-2.jpg in Resources */,
 				F21404491AD644350026CED4 /* location_house2_resize.png in Resources */,

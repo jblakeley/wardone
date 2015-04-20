@@ -12,8 +12,8 @@ import QuartzCore
 @objc class PopUpViewController: UIViewController {
     
     @IBOutlet weak var popUpView: UIView!
-    @IBOutlet weak var messageLabel: UILabel!
-    @IBOutlet weak var logoImg: UIImageView!
+    @IBOutlet weak var messageBox: UITextView!
+    @IBOutlet weak var imageBox: UIImageView!
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -33,8 +33,11 @@ import QuartzCore
     
     func showInView(aView: UIView!, withImage image: UIImage!, withMessage message: String!, animated: Bool) {
         aView.addSubview(self.view)
-        logoImg!.image = image
-        messageLabel!.text = message
+        messageBox!.text = message
+        messageBox!.font = UIFont(name: "HelveticaNeue-Light", size: 18)
+
+        imageBox!.image = image
+        //messageLabel!.text = message
         if animated {
             self.showAnimate()
         }

@@ -25,21 +25,40 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         // Launch a pop up
         // Could easily use the sender.tag to specify specific content.
         
+        var message: String
+        var image: UIImage
+        
+        switch(sender.tag) {
+        case 1:
+            message = "Booker T. Washington High School opens in September 1916. The school serves African American students, including Ward One children, from first grade to ninth grade.\n\nOlympia Mill Village is a company town located south of Ward One. Olympia School serves the children of textile workers. Before the passage of child labor laws, many of the students would have toiled in the mill rather than attend school.\n\nIn rural South Carolina, African American children often attend Rosenwald Schools. Philanthropist Julius Rosenwald, the president of Sears, Roebuck, and Company, provides funding for nearly 5,000 schools across the South, including over 450 in South Carolina."
+            image = UIImage(named: "BTW_timeline_1")!
+        case 2:
+            message = "In September of 1970, Booker T Washington desegregates and see its first non-African American students. By the fall of 1971, the student body will be almost evenly split between black and white students. \n\nWhile Columbia officially began desegregation in August of 1964, the courts did not order the twenty-one school districts of South Carolina to integrate until September 1970. But the process is not peaceful: white and black students get into a large fight at A.C. Flora High School, with other racially-motivated altercations reported throughout the state. \n\nOn September 12th, 1970, the University of Southern California Trojans become to the first fully integrated football team to play the University of Alabama. The team crushes legendary coach Bear Bryant’s all-white Crimson Tide team, forever changing college athletics in the South."
+            image = UIImage(named: "BTW_timeline_2")!
+
+        case 3:
+            message = "In 1974, Booker T. Washington High School, a center of education for young African Americans in Columbia, SC, closes due to public school desegregation in the state and the expansion of the University of South Carolina.\n\nA few years later, in 1979, Columbia’s City Planning Department applies for an Urban Development Action Grant under the federal government’s Urban Development Action Grants initiative, which ends urban renewal in the mid-70s. In its application, Columbia’s planning department places emphasis on the avoidance of discrimination and promotes public housing dispersal.\n\nIn 1974, The Housing and Community Redevelopment Act creates federal grant programs that focuses on improving blighted areas rather than demolishing them. This act reflects the developing negative attitude toward urban renewal policies that resulted from renewal’s high volume of residential displacement."
+            image = UIImage(named: "BTW_timeline_3")!
+
+        default:
+            message = " "
+            image = UIImage(named: "")!
+        }
         
         if UIScreen.mainScreen().bounds.size.width > 320 {
             if UIScreen.mainScreen().scale == 3 {
                 self.popViewController = PopUpViewController(nibName: "PopUpViewController_iPhone6Plus", bundle: nil)
                 self.popViewController.title = "This is a popup view"
-                self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a popup window for \(sender.tag)", animated: true)
+                self.popViewController.showInView(self.view, withImage: image, withMessage: message, animated: true)
             } else {
                 self.popViewController = PopUpViewController(nibName: "PopUpViewController_iPhone6", bundle: nil)
                 self.popViewController.title = "This is a popup view"
-                self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a popup window for \(sender.tag)", animated: true)
+                self.popViewController.showInView(self.view, withImage: image, withMessage: message, animated: true)
             }
         } else {
             self.popViewController = PopUpViewController(nibName: "PopUpViewController", bundle: nil)
             self.popViewController.title = "This is a popup view"
-            self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a popup window for \(sender.tag)", animated: true)
+            self.popViewController.showInView(self.view, withImage: image, withMessage: message, animated: true)
         }
     }
     
@@ -54,11 +73,15 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         buttonView.frame.size.width = (buttonSize.width + padding.width) * CGFloat(buttonCount)
         buttonView.frame.size.height = (buttonSize.height +  2.0 * padding.height)
         
+        if (buttonView.frame.size.width < self.view.frame.width) {
+            buttonView.frame.size.width = self.view.frame.width + 10
+        }
+        
         // Defines some variables to have buttons at standard distances; Could easily be extended to create an actual timeline (i.e. distance between buttons can be different)
         var buttonPosition = CGPointMake(padding.width * 0.5, padding.height)
         let buttonIncrement = buttonSize.width + padding.width
       
-        var dates: [String] = [" ", " ", " ", " ", "1916", "1970", "1974", " ", " ", " "]
+        var dates: [String] = [" ", "1916", "1970", "1974", " ", " "]
 
         //let hueIncrement = 1.0 / CGFloat(buttonCount)
         //var newHue = hueIncrement
@@ -73,9 +96,15 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
             buttonPosition.x = buttonPosition.x + buttonIncrement
             //button.backgroundColor = UIColor(hue: newHue, saturation: 1.0, brightness: 1.0, alpha: 1.0)
             //newHue = newHue + hueIncrement
-            button.backgroundColor = UIColor(red:(51.0/255.0), green: (51.0/255.0), blue:(51.0/255.0), alpha: 1.0)
+            //button.backgroundColor = UIColor(red:(51.0/255.0), green: (51.0/255.0), blue:(51.0/255.0), alpha: 1.0)
+            
+            let image = UIImage(named: "button_image.png") as UIImage?
+            button.setBackgroundImage(image, forState: UIControlState.Normal)
             button.setTitle(dates[i], forState: .Normal)
-            button.addTarget(self, action: "timelineButtonPressed:", forControlEvents: .TouchUpInside)
+            
+            if (dates[i] != " ") {
+                button.addTarget(self, action: "timelineButtonPressed:", forControlEvents: .TouchUpInside)
+            }
             buttonView.addSubview(button)
         }
         // End button adding code
@@ -104,11 +133,14 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
         setupPageControl()
         
         // Set the scrolling pageview
-        let scrollingView = timelineButtonsView(CGSizeMake(50.0,50.0), buttonCount: 10) // This generates the buttons
+        let scrollingView = timelineButtonsView(CGSizeMake(50.0,50.0), buttonCount: 6) // This generates the buttons
         buttonScroll.contentSize = scrollingView.frame.size // Makes sure we actually scroll
         buttonScroll.addSubview(scrollingView) //Adds our stuff to the View
         buttonScroll.showsHorizontalScrollIndicator = true
         buttonScroll.indicatorStyle = .Default
+        
+        buttonScroll.contentOffset = CGPointMake((buttonScroll.contentSize.width / 2) - buttonScroll.frame.size.width, 0.0);
+        
         view.bringSubviewToFront(buttonScroll)
     }
     
@@ -118,6 +150,7 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
             let controller = storyboard!.instantiateViewControllerWithIdentifier("ItemController\(i)") as! PageItemController
             controller.itemIndex = i
             controllers.append(controller)
+            println(controller)
             
         }
     }
