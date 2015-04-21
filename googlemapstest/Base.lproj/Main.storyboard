@@ -115,9 +115,9 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWw-L6-CHj">
                                 <rect key="frame" x="10" y="8" width="580" height="506"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Booker T. Washington High School opened its doors in September 1916. It was one of the few public schools in Columbia for African American students. The school originally offered first grade through ninth grade, later adding a tenth grade (1918), eleventh grade (1924), and twelfth grade (1947). Integration began in 1970, and within a year, the number of black and white students was nearly equal. The school closed in 1974, and the University of South Carolina purchased the property. USC demolished the main building in 1975 and the gym building in 1999. After extensive renovations, the university reopened the auditorium building in 2013. 
+                                <string key="text">Booker T. Washington High School opened its doors in September 1916. It was one of the few public schools in Columbia for African American students. The school originally offered first grade through ninth grade, later adding a tenth grade (1918), eleventh grade (1924), and twelfth grade (1947). Integration began in 1970, and within a year, the number of black and white students was nearly equal. The school closed in 1974, and the University of South Carolina purchased the property. USC demolished the main building in 1975 and the gym building in 1999. After extensive renovations, the university reopened the auditorium building in 2013. 
 
-Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” The State, June 15, 2013.</mutableString>
+Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” The State, June 15, 2013.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -225,12 +225,12 @@ Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” T
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCK-Lu-NWo">
-                                <rect key="frame" x="277" y="125" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCK-Lu-NWo">
+                                <rect key="frame" x="267" y="125" width="67" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="viT-KY-Oce"/>
                                 </constraints>
-                                <state key="normal" title="Play">
+                                <state key="normal" image="play_2.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -334,12 +334,12 @@ Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” T
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJN-7H-vnM">
-                                <rect key="frame" x="277" y="125" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJN-7H-vnM">
+                                <rect key="frame" x="267" y="125" width="67" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="uhK-7K-kta"/>
                                 </constraints>
-                                <state key="normal" title="Play">
+                                <state key="normal" image="play_2.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -393,5 +393,6 @@ Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” T
     <resources>
         <image name="BTW building, late 1960s--for heather.jpg" width="1909" height="1258"/>
         <image name="btw senior class officers, 1968b.jpg" width="1443" height="1045"/>
+        <image name="play_2.png" width="32" height="32"/>
     </resources>
 </document>

@@ -50,6 +50,7 @@
 		5AF677F11AE35E82003DB3B6 /* button_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AF677F01AE35E82003DB3B6 /* button_image.png */; };
 		A80076A21AE605DB00489073 /* BTW Demo Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A80076A11AE605DB00489073 /* BTW Demo Video.mp4 */; };
 		A80076A61AE6062E00489073 /* SecondVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80076A51AE6062E00489073 /* SecondVideoController.swift */; };
+		A8971F3F1AE6AF96004342BF /* play_2.png in Resources */ = {isa = PBXBuildFile; fileRef = A8971F3E1AE6AF96004342BF /* play_2.png */; };
 		A8B606BD1ADF741D00C71C2E /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B606BB1ADF741D00C71C2E /* VideoController.swift */; };
 		A8B606BE1ADF741D00C71C2E /* btw.m4v in Resources */ = {isa = PBXBuildFile; fileRef = A8B606BC1ADF741D00C71C2E /* btw.m4v */; };
 		A8B606C61ADF8FD300C71C2E /* Booker T. Washington High School..png in Resources */ = {isa = PBXBuildFile; fileRef = A8B606C51ADF8FD300C71C2E /* Booker T. Washington High School..png */; };
@@ -135,6 +136,7 @@
 		5AF677F01AE35E82003DB3B6 /* button_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_image.png; sourceTree = "<group>"; };
 		A80076A11AE605DB00489073 /* BTW Demo Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BTW Demo Video.mp4"; sourceTree = "<group>"; };
 		A80076A51AE6062E00489073 /* SecondVideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVideoController.swift; sourceTree = "<group>"; };
+		A8971F3E1AE6AF96004342BF /* play_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_2.png; sourceTree = "<group>"; };
 		A8B606BB1ADF741D00C71C2E /* VideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
 		A8B606BC1ADF741D00C71C2E /* btw.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = btw.m4v; sourceTree = "<group>"; };
 		A8B606C51ADF8FD300C71C2E /* Booker T. Washington High School..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Booker T. Washington High School..png"; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 		572B906F1AB610D700E89CF1 /* googlemapstest */ = {
 			isa = PBXGroup;
 			children = (
+				A8971F3E1AE6AF96004342BF /* play_2.png */,
 				F2EFC0171AE6055A006EABA9 /* location_factory_resize.png */,
 				F2EFC0131AE602F6006EABA9 /* Booker T. Washington High School.png */,
 				F2EFC0141AE602F7006EABA9 /* Union Train Station.png */,
@@ -235,43 +238,18 @@
 				F2EFC0111AE60160006EABA9 /* Celia Dial Saxon School.png */,
 				F2EFC00F1AE6015A006EABA9 /* Palmetto Compress Building.png */,
 				F2EFC00C1AE5F75E006EABA9 /* btw_screen_grab_2.png */,
-				F23A94B21AE34E8600016D39 /* map.png */,
-				A8B606BB1ADF741D00C71C2E /* VideoController.swift */,
-				A8B606BC1ADF741D00C71C2E /* btw.m4v */,
-				5AB6BF791AE001FF002F75E4 /* PopUpViewController_iPhone6.xib */,
-				5AB6BF7A1AE001FF002F75E4 /* PopUpViewController_iPhone6Plus.xib */,
-				5AB6BF741AE000B0002F75E4 /* main.swift */,
-				5AB6BF751AE000B0002F75E4 /* QTouchposeApplication.h */,
-				5AB6BF761AE000B0002F75E4 /* QTouchposeApplication.m */,
-				F22E37291ADF66A8003A8D62 /* PopUpViewController.swift */,
-				F22E372A1ADF66A8003A8D62 /* PopUpViewController.xib */,
-				57F89EA31AB77F9600E6818F /* 713 Assembly St.png */,
-				57F89EA21AB77F9600E6818F /* 715 Assembly St.png */,
-				57F89EA41AB77F9600E6818F /* 716 Assembly St.png */,
-				57F89EA51AB77F9600E6818F /* 810 Assembly St.png */,
-				57F89EAA1AB7807300E6818F /* 827 Assembly St.png */,
 				572B90721AB610D700E89CF1 /* AppDelegate.swift */,
-				57F89EB21AB7B54200E6818F /* binoculars.png */,
-				A8B606C71ADF903E00C71C2E /* Booker T. Washington High School.png */,
 				F22E37251ADF60E6003A8D62 /* BTW building, late 1960s--for heather.jpg */,
 				A80076A11AE605DB00489073 /* BTW Demo Video.mp4 */,
 				F22E37261ADF60E6003A8D62 /* btw senior class officers, 1968b.jpg */,
 				A8B606BC1ADF741D00C71C2E /* btw.m4v */,
 				F22E37231ADF57FA003A8D62 /* Coliseum1968.jpeg */,
 				57F89EB21AB7B54200E6818F /* binoculars.png */,
-				57F89EB01AB7B35A00E6818F /* Green pin marker icon-2.jpg */,
-				57F89EAE1AB7B34400E6818F /* w1logo.jpg */,
-				57F89EAC1AB79A6600E6818F /* ward one map marker.jpg */,
 				57F89EAA1AB7807300E6818F /* 827 Assembly Street.png */,
-				F21404461AD63F8A0026CED4 /* location_house2.png */,
-				F21404481AD644350026CED4 /* location_house2_resize.png */,
 				57F89EA21AB77F9600E6818F /* 715 Assembly St.png */,
 				57F89EA31AB77F9600E6818F /* 713 Assembly St.png */,
-				F214044A1AD646AE0026CED4 /* location_school.png */,
 				57F89EA41AB77F9600E6818F /* 716 Assembly St.png */,
 				57F89EA51AB77F9600E6818F /* 810 Assembly St.png */,
-				F22E37211ADF57D4003A8D62 /* Jubilee.png */,
-				572B90B91AB71B8B00E89CF1 /* MarkerInfoView.xib */,
 				572B90971AB6137500E89CF1 /* GoogleMaps.bundle */,
 				572B90951AB612BD00E89CF1 /* GoogleMaps.framework */,
 				572B90741AB610D700E89CF1 /* googlemapstest.xcdatamodeld */,
@@ -444,6 +422,7 @@
 				F2EFC00D1AE5F75E006EABA9 /* btw_screen_grab_1.png in Resources */,
 				5AB6BF7C1AE001FF002F75E4 /* PopUpViewController_iPhone6Plus.xib in Resources */,
 				57F89EB31AB7B54200E6818F /* binoculars.png in Resources */,
+				A8971F3F1AE6AF96004342BF /* play_2.png in Resources */,
 				572B90BA1AB71B8B00E89CF1 /* MarkerInfoView.xib in Resources */,
 				A80076A21AE605DB00489073 /* BTW Demo Video.mp4 in Resources */,
 				5AF677F11AE35E82003DB3B6 /* button_image.png in Resources */,
