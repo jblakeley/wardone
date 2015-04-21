@@ -113,7 +113,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWw-L6-CHj">
-                                <rect key="frame" x="10" y="8" width="580" height="506"/>
+                                <rect key="frame" x="20" y="8" width="560" height="506"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Booker T. Washington High School opened its doors in September 1916. It was one of the few public schools in Columbia for African American students. The school originally offered first grade through ninth grade, later adding a tenth grade (1918), eleventh grade (1924), and twelfth grade (1947). Integration began in 1970, and within a year, the number of black and white students was nearly equal. The school closed in 1974, and the University of South Carolina purchased the property. USC demolished the main building in 1975 and the gym building in 1999. After extensive renovations, the university reopened the auditorium building in 2013. 
 
@@ -123,11 +123,11 @@ Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” T
                             </textView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="yWw-L6-CHj" firstAttribute="width" secondItem="PLG-0I-qFg" secondAttribute="width" constant="-20" id="6c5-W3-E1B"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="yWw-L6-CHj" secondAttribute="bottom" constant="-8" id="SWC-dx-mYy"/>
+                            <constraint firstItem="yWw-L6-CHj" firstAttribute="width" secondItem="PLG-0I-qFg" secondAttribute="width" constant="-40" id="6c5-W3-E1B"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="yWw-L6-CHj" secondAttribute="bottom" id="SWC-dx-mYy"/>
                             <constraint firstItem="yWw-L6-CHj" firstAttribute="top" secondItem="ehO-Un-FHh" secondAttribute="bottom" constant="8" symbolic="YES" id="dzG-fv-f9a"/>
                             <constraint firstItem="yWw-L6-CHj" firstAttribute="height" secondItem="PLG-0I-qFg" secondAttribute="height" id="igI-OG-0E9"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="yWw-L6-CHj" secondAttribute="trailing" constant="-8" id="jVa-bj-iMo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yWw-L6-CHj" secondAttribute="trailing" id="jVa-bj-iMo"/>
                             <constraint firstAttribute="centerX" secondItem="yWw-L6-CHj" secondAttribute="centerX" id="oLA-zR-MAP"/>
                         </constraints>
                     </scrollView>
@@ -219,29 +219,42 @@ Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” T
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is some text about the video. Also some source information." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAE-QW-Evj">
-                                <rect key="frame" x="16" y="297" width="341" height="108"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCK-Lu-NWo">
-                                <rect key="frame" x="267" y="125" width="67" height="32"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="713 Assembly St.png" translatesAutoresizingMaskIntoConstraints="NO" id="ing-wW-QbQ">
+                                <rect key="frame" x="175" y="90" width="250" height="250"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="viT-KY-Oce"/>
+                                    <constraint firstAttribute="height" constant="250" id="Rn1-WE-nYN"/>
+                                    <constraint firstAttribute="width" constant="250" id="Vi6-OM-EJ8"/>
                                 </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bK4-ZK-xgG">
+                                <rect key="frame" x="140" y="340" width="320" height="260"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="1GN-FX-wI6"/>
+                                </constraints>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tA-jo-DQf">
+                                <rect key="frame" x="268" y="183" width="64" height="64"/>
                                 <state key="normal" image="play_2.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="60y-B1-8Z6" kind="presentation" id="Sa4-6J-PGl"/>
+                                    <segue destination="60y-B1-8Z6" kind="presentation" id="Dpj-Vy-v2M"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="MCK-Lu-NWo" firstAttribute="centerX" secondItem="IbI-fp-4pX" secondAttribute="centerX" id="4aV-8D-E4l"/>
-                            <constraint firstItem="MCK-Lu-NWo" firstAttribute="top" secondItem="pZi-dy-6dx" secondAttribute="bottom" constant="105" id="fRv-3A-pM1"/>
+                            <constraint firstItem="bK4-ZK-xgG" firstAttribute="centerX" secondItem="ing-wW-QbQ" secondAttribute="centerX" id="3zH-Og-D7A"/>
+                            <constraint firstItem="ing-wW-QbQ" firstAttribute="centerY" secondItem="2tA-jo-DQf" secondAttribute="centerY" id="FEc-9p-Xij"/>
+                            <constraint firstAttribute="centerX" secondItem="ing-wW-QbQ" secondAttribute="centerX" id="J7w-da-5e7"/>
+                            <constraint firstItem="ing-wW-QbQ" firstAttribute="centerX" secondItem="2tA-jo-DQf" secondAttribute="centerX" id="daL-oe-ea0"/>
+                            <constraint firstItem="bK4-ZK-xgG" firstAttribute="top" secondItem="ing-wW-QbQ" secondAttribute="bottom" id="mBK-yh-bF0"/>
+                            <constraint firstAttribute="centerY" secondItem="ing-wW-QbQ" secondAttribute="centerY" constant="85" id="noR-Ru-Mqz"/>
+                            <constraint firstItem="cYW-xi-U6y" firstAttribute="top" secondItem="bK4-ZK-xgG" secondAttribute="bottom" id="uFZ-D0-cxV"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -319,44 +332,59 @@ Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” T
         <!--ItemController4-->
         <scene sceneID="DzK-O0-08P">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aR1-fW-ty7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="ItemController4" title="ItemController4" id="gdB-Px-dgZ" customClass="PageItemController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fz3-4h-DPl"/>
-                        <viewControllerLayoutGuide type="bottom" id="SD3-wr-F7H"/>
+                        <viewControllerLayoutGuide type="top" id="9iU-is-U9P"/>
+                        <viewControllerLayoutGuide type="bottom" id="UnL-E4-0Yl"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="yrn-6z-b5S">
+                    <view key="view" contentMode="scaleToFill" id="gG2-X0-LVL">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is some text about the video. Also some source information." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CnD-S6-2B1">
-                                <rect key="frame" x="16" y="297" width="341" height="108"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJN-7H-vnM">
-                                <rect key="frame" x="267" y="125" width="67" height="32"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="713 Assembly St.png" translatesAutoresizingMaskIntoConstraints="NO" id="g2A-3T-Q07">
+                                <rect key="frame" x="175" y="90" width="250" height="250"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="uhK-7K-kta"/>
+                                    <constraint firstAttribute="width" constant="250" id="MGc-ub-EGm"/>
+                                    <constraint firstAttribute="height" constant="250" id="lg5-4V-C2X"/>
                                 </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oYH-gh-eCs">
+                                <rect key="frame" x="140" y="340" width="320" height="260"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="hbi-C7-FNl"/>
+                                </constraints>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Put-Xn-4Ul">
+                                <rect key="frame" x="268" y="183" width="64" height="64"/>
                                 <state key="normal" image="play_2.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="AqQ-g2-TEs" kind="presentation" id="w43-8C-zCq"/>
+                                    <segue destination="AqQ-g2-TEs" kind="presentation" id="gX6-gr-GLD"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="BJN-7H-vnM" firstAttribute="top" secondItem="fz3-4h-DPl" secondAttribute="bottom" constant="105" id="ccs-jY-6j3"/>
-                            <constraint firstItem="BJN-7H-vnM" firstAttribute="centerX" secondItem="yrn-6z-b5S" secondAttribute="centerX" id="nqb-qv-bzq"/>
+                            <constraint firstItem="Put-Xn-4Ul" firstAttribute="centerX" secondItem="g2A-3T-Q07" secondAttribute="centerX" id="2B4-sr-ntL"/>
+                            <constraint firstItem="oYH-gh-eCs" firstAttribute="top" secondItem="g2A-3T-Q07" secondAttribute="bottom" id="2F0-dh-ia9"/>
+                            <constraint firstItem="UnL-E4-0Yl" firstAttribute="top" secondItem="oYH-gh-eCs" secondAttribute="bottom" id="2f5-hI-WJf"/>
+                            <constraint firstItem="oYH-gh-eCs" firstAttribute="centerX" secondItem="g2A-3T-Q07" secondAttribute="centerX" id="68E-nP-o9w"/>
+                            <constraint firstItem="Put-Xn-4Ul" firstAttribute="centerY" secondItem="g2A-3T-Q07" secondAttribute="centerY" id="Fy8-sV-R6p"/>
+                            <constraint firstAttribute="centerX" secondItem="g2A-3T-Q07" secondAttribute="centerX" id="VtH-3J-zjc"/>
+                            <constraint firstAttribute="centerY" secondItem="g2A-3T-Q07" secondAttribute="centerY" constant="85" id="acJ-PV-SIE"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aR1-fW-ty7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2037" y="3598"/>
+            <point key="canvasLocation" x="2037" y="3566"/>
         </scene>
         <!--Second Video Controller-->
         <scene sceneID="TgZ-qg-46W">
@@ -391,8 +419,9 @@ Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” T
         </scene>
     </scenes>
     <resources>
+        <image name="713 Assembly St.png" width="1178" height="804"/>
         <image name="BTW building, late 1960s--for heather.jpg" width="1909" height="1258"/>
         <image name="btw senior class officers, 1968b.jpg" width="1443" height="1045"/>
-        <image name="play_2.png" width="32" height="32"/>
+        <image name="play_2.png" width="64" height="64"/>
     </resources>
 </document>
