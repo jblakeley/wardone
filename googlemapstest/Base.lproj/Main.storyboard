@@ -112,11 +112,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="506"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWw-L6-CHj">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWw-L6-CHj">
                                 <rect key="frame" x="10" y="8" width="580" height="506"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Booker T. Washington High School opened its doors in 1916 as the second public school in Columbia, South Carolina for African Americans. Built on the corner of Marion and Blossom Streets, the school only offered elementary grades. Then in 1924, it became a standard highschool-the largest public high school for Blacks in South Carolina for many years. Booker T. Washington was also one of the few in the state to be accredited by the Southern Association of Colleges and Secondary Schools. The school closed in 1974 when the University of South Carolina purchased the property, adaptively reusing the structures as a collegiate institution of learning.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <mutableString key="text">Booker T. Washington High School opened its doors in September 1916. It was one of the few public schools in Columbia for African American students. The school originally offered first grade through ninth grade, later adding a tenth grade (1918), eleventh grade (1924), and twelfth grade (1947). Integration began in 1970, and within a year, the number of black and white students was nearly equal. The school closed in 1974, and the University of South Carolina purchased the property. USC demolished the main building in 1975 and the gym building in 1999. After extensive renovations, the university reopened the auditorium building in 2013. 
+
+Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” The State, June 15, 2013.</mutableString>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
