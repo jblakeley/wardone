@@ -314,6 +314,79 @@
             </objects>
             <point key="canvasLocation" x="2157" y="-662"/>
         </scene>
+        <!--ItemController4-->
+        <scene sceneID="ZCK-LB-kHU">
+            <objects>
+                <viewController storyboardIdentifier="ItemController4" title="ItemController4" id="82K-D3-QAw" customClass="PageItemController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UxV-6e-S0A"/>
+                        <viewControllerLayoutGuide type="bottom" id="2yM-Fm-Kpq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K6j-AX-KCg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is some text about the video. Also some source information." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0f-J5-fsl">
+                                <rect key="frame" x="16" y="297" width="341" height="108"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyk-Br-g9q">
+                                <rect key="frame" x="277" y="125" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="mkK-XG-9Up"/>
+                                </constraints>
+                                <state key="normal" title="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oOS-sC-cy2" kind="presentation" id="FI7-Zk-hUg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tyk-Br-g9q" firstAttribute="top" secondItem="UxV-6e-S0A" secondAttribute="bottom" constant="105" id="O0v-PS-Npu"/>
+                            <constraint firstItem="tyk-Br-g9q" firstAttribute="centerX" secondItem="K6j-AX-KCg" secondAttribute="centerX" id="t7b-IF-z0I"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CQu-uV-IHy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2037" y="3628"/>
+        </scene>
+        <!--Second Video-->
+        <scene sceneID="v2M-Ke-mMX">
+            <objects>
+                <viewController title="Second Video" id="oOS-sC-cy2" customClass="SecondVideoController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AD6-jo-fqQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="gwz-TJ-1Rr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5yp-Np-B4G">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="fvy-pp-ZIK" appends="YES" id="n2u-8O-qcQ"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <segue destination="Vfg-2U-caO" kind="unwind" identifier="unwind" unwindAction="unwindToPage:" id="2cQ-8M-QCx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oFo-G1-WXH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Vfg-2U-caO" userLabel="Exit" sceneMemberID="exit"/>
+                <swipeGestureRecognizer direction="up" id="fvy-pp-ZIK">
+                    <connections>
+                        <segue destination="Vfg-2U-caO" kind="unwind" unwindAction="unwindToPage:" id="bT4-e6-ucy"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2723" y="3628"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BTW building, late 1960s--for heather.jpg" width="1909" height="1258"/>
