@@ -58,37 +58,37 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
 
         //markers begin
         var marker = GMSMarker()
-        marker.position = CLLocationCoordinate2DMake(33.995706, -81.033082)
-        marker.title = "827 Assembly St."
+        marker.position = CLLocationCoordinate2DMake(33.995999, -81.03301)
+        marker.title = "827 Assembly Street"
         marker.icon = UIImage(named: "location_house2_resize.png")
         marker.snippet = "snippet"
         marker.map = mapView
         
         var marker2 = GMSMarker()
-        marker2.position = CLLocationCoordinate2DMake(33.995498, -81.032771)
-        marker2.title = "810 Assembly St."
+        marker2.position = CLLocationCoordinate2DMake(33.99205, -81.03977)
+        marker2.title = "Palmetto Compress Building"
         marker2.snippet = "snippet"
-        marker2.icon = UIImage(named: "location_house2_resize.png")
+        marker2.icon = UIImage(named: "location_factory_resize.png")
         marker2.map = mapView
         
+        //coordinates are off, waiting on new ones
         var marker3 = GMSMarker()
-        marker3.position = CLLocationCoordinate2DMake(33.994251, -81.032216)
-        marker3.title = "716 Assembly St."
+        marker3.position = CLLocationCoordinate2DMake(33.992548, -81.031809)
+        marker3.title = "Celia Dial Saxon School"
         marker3.snippet = "snippet"
-        marker3.icon = UIImage(named: "location_house2_resize.png")
-
+        marker3.icon = UIImage(named: "location_school.png")
         marker3.map = mapView
         
         var marker4 = GMSMarker()
-        marker4.position = CLLocationCoordinate2DMake(33.994158, -81.032373)
-        marker4.title = "713 Assembly St."
+        marker4.position = CLLocationCoordinate2DMake(33.990795, -81.029416)
+        marker4.title = "Union Train Station"
         marker4.icon = UIImage(named: "location_house2_resize.png")
         marker4.snippet = "Snippet"
         marker4.map = mapView
         
         var marker5 = GMSMarker()
-        marker5.position = CLLocationCoordinate2DMake(33.993389, -81.025598)
-        marker5.title = "Booker T. Washington High School."
+        marker5.position = CLLocationCoordinate2DMake(33.993651, -81.025758)
+        marker5.title = "Booker T. Washington High School"
         marker5.icon = UIImage(named: "location_school.png")
         marker5.snippet = "Snippet"
         marker5.map = mapView
@@ -127,8 +127,8 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
         println(marker.title)
         if let infoView = UIView.viewFromNibName("MarkerInfoView") as? MarkerInfoView {
             infoView.nameLabel.text = marker.title
-            println(marker.title + "png")
-            infoView.placePhoto.image = UIImage(named: marker.title + "png")
+            println(marker.title + ".png")
+            infoView.placePhoto.image = UIImage(named: marker.title + ".png")
             return infoView
         }
         else {

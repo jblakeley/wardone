@@ -38,7 +38,7 @@
 		57F89EA71AB77F9600E6818F /* 713 Assembly St.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F89EA31AB77F9600E6818F /* 713 Assembly St.png */; };
 		57F89EA81AB77F9600E6818F /* 716 Assembly St.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F89EA41AB77F9600E6818F /* 716 Assembly St.png */; };
 		57F89EA91AB77F9600E6818F /* 810 Assembly St.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F89EA51AB77F9600E6818F /* 810 Assembly St.png */; };
-		57F89EAB1AB7807300E6818F /* 827 Assembly St.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F89EAA1AB7807300E6818F /* 827 Assembly St.png */; };
+		57F89EAB1AB7807300E6818F /* 827 Assembly Street.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F89EAA1AB7807300E6818F /* 827 Assembly Street.png */; };
 		57F89EAD1AB79A6600E6818F /* ward one map marker.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57F89EAC1AB79A6600E6818F /* ward one map marker.jpg */; };
 		57F89EAF1AB7B34400E6818F /* w1logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57F89EAE1AB7B34400E6818F /* w1logo.jpg */; };
 		57F89EB11AB7B35A00E6818F /* Green pin marker icon-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57F89EB01AB7B35A00E6818F /* Green pin marker icon-2.jpg */; };
@@ -51,7 +51,6 @@
 		A8B606BD1ADF741D00C71C2E /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B606BB1ADF741D00C71C2E /* VideoController.swift */; };
 		A8B606BE1ADF741D00C71C2E /* btw.m4v in Resources */ = {isa = PBXBuildFile; fileRef = A8B606BC1ADF741D00C71C2E /* btw.m4v */; };
 		A8B606C61ADF8FD300C71C2E /* Booker T. Washington High School..png in Resources */ = {isa = PBXBuildFile; fileRef = A8B606C51ADF8FD300C71C2E /* Booker T. Washington High School..png */; };
-		A8B606C81ADF903E00C71C2E /* Booker T. Washington High School.png in Resources */ = {isa = PBXBuildFile; fileRef = A8B606C71ADF903E00C71C2E /* Booker T. Washington High School.png */; };
 		F21404451AD62DF00026CED4 /* Ward One Map 7 (2)-01 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = F21404441AD62DF00026CED4 /* Ward One Map 7 (2)-01 copy.png */; };
 		F21404471AD63F8A0026CED4 /* location_house2.png in Resources */ = {isa = PBXBuildFile; fileRef = F21404461AD63F8A0026CED4 /* location_house2.png */; };
 		F21404491AD644350026CED4 /* location_house2_resize.png in Resources */ = {isa = PBXBuildFile; fileRef = F21404481AD644350026CED4 /* location_house2_resize.png */; };
@@ -65,6 +64,13 @@
 		F22E372B1ADF66A8003A8D62 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E37291ADF66A8003A8D62 /* PopUpViewController.swift */; };
 		F22E372C1ADF66A8003A8D62 /* PopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F22E372A1ADF66A8003A8D62 /* PopUpViewController.xib */; };
 		F23A94B31AE34E8600016D39 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = F23A94B21AE34E8600016D39 /* map.png */; };
+		F2EFC00D1AE5F75E006EABA9 /* btw_screen_grab_1.png in Resources */ = {isa = PBXBuildFile; fileRef = F2EFC00B1AE5F75E006EABA9 /* btw_screen_grab_1.png */; };
+		F2EFC00E1AE5F75E006EABA9 /* btw_screen_grab_2.png in Resources */ = {isa = PBXBuildFile; fileRef = F2EFC00C1AE5F75E006EABA9 /* btw_screen_grab_2.png */; };
+		F2EFC0101AE6015A006EABA9 /* Palmetto Compress Building.png in Resources */ = {isa = PBXBuildFile; fileRef = F2EFC00F1AE6015A006EABA9 /* Palmetto Compress Building.png */; };
+		F2EFC0121AE60160006EABA9 /* Celia Dial Saxon School.png in Resources */ = {isa = PBXBuildFile; fileRef = F2EFC0111AE60160006EABA9 /* Celia Dial Saxon School.png */; };
+		F2EFC0151AE602F7006EABA9 /* Booker T. Washington High School.png in Resources */ = {isa = PBXBuildFile; fileRef = F2EFC0131AE602F6006EABA9 /* Booker T. Washington High School.png */; };
+		F2EFC0161AE602F7006EABA9 /* Union Train Station.png in Resources */ = {isa = PBXBuildFile; fileRef = F2EFC0141AE602F7006EABA9 /* Union Train Station.png */; };
+		F2EFC0181AE6055A006EABA9 /* location_factory_resize.png in Resources */ = {isa = PBXBuildFile; fileRef = F2EFC0171AE6055A006EABA9 /* location_factory_resize.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,7 +120,7 @@
 		57F89EA31AB77F9600E6818F /* 713 Assembly St.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "713 Assembly St.png"; sourceTree = "<group>"; };
 		57F89EA41AB77F9600E6818F /* 716 Assembly St.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "716 Assembly St.png"; sourceTree = "<group>"; };
 		57F89EA51AB77F9600E6818F /* 810 Assembly St.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "810 Assembly St.png"; sourceTree = "<group>"; };
-		57F89EAA1AB7807300E6818F /* 827 Assembly St.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "827 Assembly St.png"; sourceTree = "<group>"; };
+		57F89EAA1AB7807300E6818F /* 827 Assembly Street.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "827 Assembly Street.png"; sourceTree = "<group>"; };
 		57F89EAC1AB79A6600E6818F /* ward one map marker.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ward one map marker.jpg"; sourceTree = "<group>"; };
 		57F89EAE1AB7B34400E6818F /* w1logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = w1logo.jpg; sourceTree = "<group>"; };
 		57F89EB01AB7B35A00E6818F /* Green pin marker icon-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Green pin marker icon-2.jpg"; sourceTree = "<group>"; };
@@ -128,7 +134,6 @@
 		A8B606BB1ADF741D00C71C2E /* VideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
 		A8B606BC1ADF741D00C71C2E /* btw.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = btw.m4v; sourceTree = "<group>"; };
 		A8B606C51ADF8FD300C71C2E /* Booker T. Washington High School..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Booker T. Washington High School..png"; sourceTree = "<group>"; };
-		A8B606C71ADF903E00C71C2E /* Booker T. Washington High School.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Booker T. Washington High School.png"; sourceTree = "<group>"; };
 		F21404441AD62DF00026CED4 /* Ward One Map 7 (2)-01 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ward One Map 7 (2)-01 copy.png"; sourceTree = "<group>"; };
 		F21404461AD63F8A0026CED4 /* location_house2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_house2.png; sourceTree = "<group>"; };
 		F21404481AD644350026CED4 /* location_house2_resize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_house2_resize.png; sourceTree = "<group>"; };
@@ -142,6 +147,13 @@
 		F22E37291ADF66A8003A8D62 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		F22E372A1ADF66A8003A8D62 /* PopUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpViewController.xib; sourceTree = "<group>"; };
 		F23A94B21AE34E8600016D39 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		F2EFC00B1AE5F75E006EABA9 /* btw_screen_grab_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btw_screen_grab_1.png; sourceTree = "<group>"; };
+		F2EFC00C1AE5F75E006EABA9 /* btw_screen_grab_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btw_screen_grab_2.png; sourceTree = "<group>"; };
+		F2EFC00F1AE6015A006EABA9 /* Palmetto Compress Building.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Palmetto Compress Building.png"; sourceTree = "<group>"; };
+		F2EFC0111AE60160006EABA9 /* Celia Dial Saxon School.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Celia Dial Saxon School.png"; sourceTree = "<group>"; };
+		F2EFC0131AE602F6006EABA9 /* Booker T. Washington High School.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Booker T. Washington High School.png"; sourceTree = "<group>"; };
+		F2EFC0141AE602F7006EABA9 /* Union Train Station.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Union Train Station.png"; sourceTree = "<group>"; };
+		F2EFC0171AE6055A006EABA9 /* location_factory_resize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_factory_resize.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,8 +224,14 @@
 		572B906F1AB610D700E89CF1 /* googlemapstest */ = {
 			isa = PBXGroup;
 			children = (
+				F2EFC0171AE6055A006EABA9 /* location_factory_resize.png */,
+				F2EFC0131AE602F6006EABA9 /* Booker T. Washington High School.png */,
+				F2EFC0141AE602F7006EABA9 /* Union Train Station.png */,
+				F2EFC00B1AE5F75E006EABA9 /* btw_screen_grab_1.png */,
+				F2EFC0111AE60160006EABA9 /* Celia Dial Saxon School.png */,
+				F2EFC00F1AE6015A006EABA9 /* Palmetto Compress Building.png */,
+				F2EFC00C1AE5F75E006EABA9 /* btw_screen_grab_2.png */,
 				F23A94B21AE34E8600016D39 /* map.png */,
-				A8B606C71ADF903E00C71C2E /* Booker T. Washington High School.png */,
 				A8B606BB1ADF741D00C71C2E /* VideoController.swift */,
 				A8B606BC1ADF741D00C71C2E /* btw.m4v */,
 				5AB6BF791AE001FF002F75E4 /* PopUpViewController_iPhone6.xib */,
@@ -230,7 +248,7 @@
 				57F89EB01AB7B35A00E6818F /* Green pin marker icon-2.jpg */,
 				57F89EAE1AB7B34400E6818F /* w1logo.jpg */,
 				57F89EAC1AB79A6600E6818F /* ward one map marker.jpg */,
-				57F89EAA1AB7807300E6818F /* 827 Assembly St.png */,
+				57F89EAA1AB7807300E6818F /* 827 Assembly Street.png */,
 				F21404461AD63F8A0026CED4 /* location_house2.png */,
 				F21404481AD644350026CED4 /* location_house2_resize.png */,
 				57F89EA21AB77F9600E6818F /* 715 Assembly St.png */,
@@ -366,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F22E37271ADF60E6003A8D62 /* BTW building, late 1960s--for heather.jpg in Resources */,
+				F2EFC0151AE602F7006EABA9 /* Booker T. Washington High School.png in Resources */,
 				5731E68D1AC1CA2D0079C721 /* sample_mpeg4.mp4 in Resources */,
 				F21404471AD63F8A0026CED4 /* location_house2.png in Resources */,
 				57F89EA71AB77F9600E6818F /* 713 Assembly St.png in Resources */,
@@ -373,21 +392,25 @@
 				F22E37281ADF60E6003A8D62 /* btw senior class officers, 1968b.jpg in Resources */,
 				5AB6BF7B1AE001FF002F75E4 /* PopUpViewController_iPhone6.xib in Resources */,
 				572B907B1AB610D700E89CF1 /* Main.storyboard in Resources */,
-				57F89EAB1AB7807300E6818F /* 827 Assembly St.png in Resources */,
+				57F89EAB1AB7807300E6818F /* 827 Assembly Street.png in Resources */,
 				F23A94B31AE34E8600016D39 /* map.png in Resources */,
 				F22E37221ADF57D4003A8D62 /* Jubilee.png in Resources */,
 				A8B606BE1ADF741D00C71C2E /* btw.m4v in Resources */,
+				F2EFC0161AE602F7006EABA9 /* Union Train Station.png in Resources */,
 				57F89EAD1AB79A6600E6818F /* ward one map marker.jpg in Resources */,
+				F2EFC0101AE6015A006EABA9 /* Palmetto Compress Building.png in Resources */,
 				A8B606C61ADF8FD300C71C2E /* Booker T. Washington High School..png in Resources */,
 				57F89EA91AB77F9600E6818F /* 810 Assembly St.png in Resources */,
+				F2EFC0121AE60160006EABA9 /* Celia Dial Saxon School.png in Resources */,
 				F22E372C1ADF66A8003A8D62 /* PopUpViewController.xib in Resources */,
 				57F89EA81AB77F9600E6818F /* 716 Assembly St.png in Resources */,
 				F22E37241ADF57FA003A8D62 /* Coliseum1968.jpeg in Resources */,
 				572B90801AB610D700E89CF1 /* LaunchScreen.xib in Resources */,
 				F214044B1AD646AE0026CED4 /* location_school.png in Resources */,
-				A8B606C81ADF903E00C71C2E /* Booker T. Washington High School.png in Resources */,
+				F2EFC00E1AE5F75E006EABA9 /* btw_screen_grab_2.png in Resources */,
 				572B907D1AB610D700E89CF1 /* Images.xcassets in Resources */,
 				572B90981AB6137500E89CF1 /* GoogleMaps.bundle in Resources */,
+				F2EFC00D1AE5F75E006EABA9 /* btw_screen_grab_1.png in Resources */,
 				5AB6BF7C1AE001FF002F75E4 /* PopUpViewController_iPhone6Plus.xib in Resources */,
 				57F89EB31AB7B54200E6818F /* binoculars.png in Resources */,
 				572B90BA1AB71B8B00E89CF1 /* MarkerInfoView.xib in Resources */,
@@ -395,6 +418,7 @@
 				57F89EAF1AB7B34400E6818F /* w1logo.jpg in Resources */,
 				57F89EB11AB7B35A00E6818F /* Green pin marker icon-2.jpg in Resources */,
 				F21404491AD644350026CED4 /* location_house2_resize.png in Resources */,
+				F2EFC0181AE6055A006EABA9 /* location_factory_resize.png in Resources */,
 				57F89EA61AB77F9600E6818F /* 715 Assembly St.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
