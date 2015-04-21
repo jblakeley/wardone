@@ -52,7 +52,6 @@
 		A8B606BE1ADF741D00C71C2E /* btw.m4v in Resources */ = {isa = PBXBuildFile; fileRef = A8B606BC1ADF741D00C71C2E /* btw.m4v */; };
 		A8B606C61ADF8FD300C71C2E /* Booker T. Washington High School..png in Resources */ = {isa = PBXBuildFile; fileRef = A8B606C51ADF8FD300C71C2E /* Booker T. Washington High School..png */; };
 		A8B606C81ADF903E00C71C2E /* Booker T. Washington High School.png in Resources */ = {isa = PBXBuildFile; fileRef = A8B606C71ADF903E00C71C2E /* Booker T. Washington High School.png */; };
-		A8FA2B8E1AE02FF00013EB0B /* Splash Screen_text2.png in Resources */ = {isa = PBXBuildFile; fileRef = A8FA2B8D1AE02FF00013EB0B /* Splash Screen_text2.png */; };
 		F21404451AD62DF00026CED4 /* Ward One Map 7 (2)-01 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = F21404441AD62DF00026CED4 /* Ward One Map 7 (2)-01 copy.png */; };
 		F21404471AD63F8A0026CED4 /* location_house2.png in Resources */ = {isa = PBXBuildFile; fileRef = F21404461AD63F8A0026CED4 /* location_house2.png */; };
 		F21404491AD644350026CED4 /* location_house2_resize.png in Resources */ = {isa = PBXBuildFile; fileRef = F21404481AD644350026CED4 /* location_house2_resize.png */; };
@@ -130,7 +129,6 @@
 		A8B606BC1ADF741D00C71C2E /* btw.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = btw.m4v; sourceTree = "<group>"; };
 		A8B606C51ADF8FD300C71C2E /* Booker T. Washington High School..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Booker T. Washington High School..png"; sourceTree = "<group>"; };
 		A8B606C71ADF903E00C71C2E /* Booker T. Washington High School.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Booker T. Washington High School.png"; sourceTree = "<group>"; };
-		A8FA2B8D1AE02FF00013EB0B /* Splash Screen_text2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash Screen_text2.png"; sourceTree = "<group>"; };
 		F21404441AD62DF00026CED4 /* Ward One Map 7 (2)-01 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ward One Map 7 (2)-01 copy.png"; sourceTree = "<group>"; };
 		F21404461AD63F8A0026CED4 /* location_house2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_house2.png; sourceTree = "<group>"; };
 		F21404481AD644350026CED4 /* location_house2_resize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_house2_resize.png; sourceTree = "<group>"; };
@@ -249,7 +247,6 @@
 				F21404441AD62DF00026CED4 /* Ward One Map 7 (2)-01 copy.png */,
 				572B90791AB610D700E89CF1 /* Main.storyboard */,
 				572B907C1AB610D700E89CF1 /* Images.xcassets */,
-				A8FA2B8D1AE02FF00013EB0B /* Splash Screen_text2.png */,
 				572B907E1AB610D700E89CF1 /* LaunchScreen.xib */,
 				572B90741AB610D700E89CF1 /* googlemapstest.xcdatamodeld */,
 				572B90BB1AB71D5E00E89CF1 /* MarkerInfoView.swift */,
@@ -377,7 +374,6 @@
 				5AB6BF7B1AE001FF002F75E4 /* PopUpViewController_iPhone6.xib in Resources */,
 				572B907B1AB610D700E89CF1 /* Main.storyboard in Resources */,
 				57F89EAB1AB7807300E6818F /* 827 Assembly St.png in Resources */,
-				A8FA2B8E1AE02FF00013EB0B /* Splash Screen_text2.png in Resources */,
 				F23A94B31AE34E8600016D39 /* map.png in Resources */,
 				F22E37221ADF57D4003A8D62 /* Jubilee.png in Resources */,
 				A8B606BE1ADF741D00C71C2E /* btw.m4v in Resources */,
@@ -554,6 +550,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -572,6 +569,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
