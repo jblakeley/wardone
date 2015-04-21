@@ -73,7 +73,7 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
         
         //coordinates are off, waiting on new ones
         var marker3 = GMSMarker()
-        marker3.position = CLLocationCoordinate2DMake(33.992548, -81.031809)
+        marker3.position = CLLocationCoordinate2DMake(33.991854, -81.031873)
         marker3.title = "Celia Dial Saxon School"
         marker3.snippet = "snippet"
         marker3.icon = UIImage(named: "location_school.png")
@@ -138,7 +138,11 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
     
     func mapView(mapView: GMSMapView!, didTapInfoWindowOfMarker marker: GMSMarker!) {
 
+      if(marker.title == "Booker T. Washington High School")
+      {
         self.performSegueWithIdentifier("contentSegue", sender: self)
+      }
+      
         
     }
     

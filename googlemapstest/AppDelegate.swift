@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         GMSServices.provideAPIKey("AIzaSyDvq_csR-IV-vL-G0p41YMc-4MUimCVKPI")
-        (application as! QTouchposeApplication).alwaysShowTouches = true
+        (application as! QTouchposeApplication).alwaysShowTouches = false
         return true
     }
 
