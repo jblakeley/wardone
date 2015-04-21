@@ -37,7 +37,7 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
             image = UIImage(named: "BTW_timeline_2")!
 
         case 3:
-            message = "In 1974, Booker T. Washington High School, a center of education for young African Americans in Columbia, SC, closes due to public school desegregation in the state and the expansion of the University of South Carolina.\n\nA few years later, in 1979, Columbia’s City Planning Department applies for an Urban Development Action Grant under the federal government’s Urban Development Action Grants initiative, which ends urban renewal in the mid-70s. In its application, Columbia’s planning department places emphasis on the avoidance of discrimination and promotes public housing dispersal.\n\nIn 1974, The Housing and Community Redevelopment Act creates federal grant programs that focuses on improving blighted areas rather than demolishing them. This act reflects the developing negative attitude toward urban renewal policies that resulted from renewal’s high volume of residential displacement."
+            message = "In 1974, Booker T. Washington High School, a center of education for young African Americans in Columbia, SC, closes due to public school desegregation in the state and the expansion of the University of South Carolina.\n\nA few years later, in 1979, Columbia’s City Planning Department applies for an Urban Development Action Grant under the federal government’s Urban Development Action Grants initiative, which ends urban renewal in the mid-70s. In its application, Columbia’s planning department places emphasis on the avoidance of discrimination and promotes public housing dispersal.\n\nIn 1974, The Housing and Community Redevelopment Act creates federal grant programs that focus on improving blighted areas rather than demolishing them. This act reflects the developing negative attitude toward urban renewal policies that resulted from renewal’s high volume of residential displacement."
             image = UIImage(named: "BTW_timeline_3")!
 
         default:
@@ -145,7 +145,7 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
     }
     
     func populateControllersArray() {
-        for i in 0...3 {
+        for i in 0...4 {
 
             let controller = storyboard!.instantiateViewControllerWithIdentifier("ItemController\(i)") as! PageItemController
             controller.itemIndex = i
