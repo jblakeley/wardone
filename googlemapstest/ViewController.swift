@@ -45,8 +45,8 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
         
 
         
-        var camera = GMSCameraPosition.cameraWithLatitude(33.995706 ,
-            longitude: -81.033082, zoom: 17)
+        var camera = GMSCameraPosition.cameraWithLatitude(33.993551 ,
+            longitude: -81.025958, zoom: 17)
         mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
         mapView.myLocationEnabled = true
         self.mapView.delegate = self
@@ -70,8 +70,7 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
         marker2.snippet = "snippet"
         marker2.icon = UIImage(named: "location_factory_resize.png")
         marker2.map = mapView
-        
-        //coordinates are off, waiting on new ones
+      
         var marker3 = GMSMarker()
         marker3.position = CLLocationCoordinate2DMake(33.991854, -81.031873)
         marker3.title = "Celia Dial Saxon School"
@@ -108,7 +107,7 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
         var northEast = CLLocationCoordinate2DMake(34.005605, -81.028186);
         var overlayBounds = GMSCoordinateBounds(coordinate: southWest, coordinate: northEast)
         
-        var icon = UIImage(named: "map.png")
+        var icon = UIImage(named: "Map without street names-01.png")
         
         var center = CLLocationCoordinate2DMake(33.99474, -81.033249)
         
