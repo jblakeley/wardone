@@ -65,7 +65,7 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
         marker.map = mapView
         
         var marker2 = GMSMarker()
-        marker2.position = CLLocationCoordinate2DMake(33.99205, -81.03977)
+        marker2.position = CLLocationCoordinate2DMake(33.991805, -81.039720)
         marker2.title = "Palmetto Compress Building"
         marker2.snippet = "snippet"
         marker2.icon = UIImage(named: "location_factory_resize.png")
@@ -81,7 +81,7 @@ class ViewController: UIViewController, GMSPanoramaViewDelegate, GMSMapViewDeleg
         var marker4 = GMSMarker()
         marker4.position = CLLocationCoordinate2DMake(33.990795, -81.029416)
         marker4.title = "Union Train Station"
-        marker4.icon = UIImage(named: "location_house2_resize.png")
+        marker4.icon = UIImage(named: "location_business.png")
         marker4.snippet = "Snippet"
         marker4.map = mapView
         

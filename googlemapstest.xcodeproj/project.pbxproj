@@ -56,6 +56,7 @@
 		A8971F471AE7238C004342BF /* BTW Building in Color 1969_.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8971F461AE7238C004342BF /* BTW Building in Color 1969_.jpg */; };
 		A8971F491AE727D6004342BF /* video_preview_1.png in Resources */ = {isa = PBXBuildFile; fileRef = A8971F481AE727D6004342BF /* video_preview_1.png */; };
 		A8971F4B1AE727DD004342BF /* video_preview_2.png in Resources */ = {isa = PBXBuildFile; fileRef = A8971F4A1AE727DD004342BF /* video_preview_2.png */; };
+		A8971F531AE73E39004342BF /* location_business.png in Resources */ = {isa = PBXBuildFile; fileRef = A8971F521AE73E39004342BF /* location_business.png */; };
 		A8B606BD1ADF741D00C71C2E /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B606BB1ADF741D00C71C2E /* VideoController.swift */; };
 		A8B606BE1ADF741D00C71C2E /* btw.m4v in Resources */ = {isa = PBXBuildFile; fileRef = A8B606BC1ADF741D00C71C2E /* btw.m4v */; };
 		A8B606C61ADF8FD300C71C2E /* Booker T. Washington High School..png in Resources */ = {isa = PBXBuildFile; fileRef = A8B606C51ADF8FD300C71C2E /* Booker T. Washington High School..png */; };
@@ -148,6 +149,7 @@
 		A8971F461AE7238C004342BF /* BTW Building in Color 1969_.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "BTW Building in Color 1969_.jpg"; sourceTree = "<group>"; };
 		A8971F481AE727D6004342BF /* video_preview_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video_preview_1.png; sourceTree = "<group>"; };
 		A8971F4A1AE727DD004342BF /* video_preview_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video_preview_2.png; sourceTree = "<group>"; };
+		A8971F521AE73E39004342BF /* location_business.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_business.png; sourceTree = "<group>"; };
 		A8B606BB1ADF741D00C71C2E /* VideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
 		A8B606BC1ADF741D00C71C2E /* btw.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = btw.m4v; sourceTree = "<group>"; };
 		A8B606C51ADF8FD300C71C2E /* Booker T. Washington High School..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Booker T. Washington High School..png"; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				F289D7C11AE7309D00EF72BE /* info.png */,
+				A8971F521AE73E39004342BF /* location_business.png */,
 				A8971F481AE727D6004342BF /* video_preview_1.png */,
 				A8971F4A1AE727DD004342BF /* video_preview_2.png */,
 				A8971F401AE6C3C6004342BF /* Map without street names-01.png */,
@@ -450,6 +453,7 @@
 				572B90BA1AB71B8B00E89CF1 /* MarkerInfoView.xib in Resources */,
 				A80076A21AE605DB00489073 /* BTW Demo Video.mp4 in Resources */,
 				5AF677F11AE35E82003DB3B6 /* button_image.png in Resources */,
+				A8971F531AE73E39004342BF /* location_business.png in Resources */,
 				57F89EAF1AB7B34400E6818F /* w1logo.jpg in Resources */,
 				57F89EB11AB7B35A00E6818F /* Green pin marker icon-2.jpg in Resources */,
 				F21404491AD644350026CED4 /* location_house2_resize.png in Resources */,

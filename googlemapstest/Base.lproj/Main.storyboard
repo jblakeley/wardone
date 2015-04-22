@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QZf-Vj-Jvf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QZf-Vj-Jvf">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -122,9 +122,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWw-L6-CHj">
                                 <rect key="frame" x="20" y="8" width="560" height="506"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Booker T. Washington High School opened its doors in September 1916. It was one of the few public schools in Columbia for African American students. The school originally offered first grade through ninth grade, later adding a tenth grade (1918), eleventh grade (1924), and twelfth grade (1947). Integration began in 1970, and within a year, the number of black and white students was nearly equal. The school closed in 1974, and the University of South Carolina purchased the property. USC demolished the main building in 1975 and the gym building in 1999. After extensive renovations, the university reopened the auditorium building in 2013. 
-
-Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” The State, June 15, 2013.</string>
+                                <mutableString key="text">Booker T. Washington High School opened its doors in September 1916. It was one of the few public schools in Columbia for African American students. The school originally offered first grade through ninth grade, later adding a tenth grade (1918), eleventh grade (1924), and twelfth grade (1947). Integration began in 1970, and within a year, the number of black and white students was nearly equal. The school closed in 1974, and the University of South Carolina purchased the property. USC demolished the main building in 1975 and the gym building in 1999. After extensive renovations, the university reopened the auditorium building in 2013. </mutableString>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -165,12 +163,15 @@ Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” T
                                     <constraint firstAttribute="width" constant="250" id="Vi6-OM-EJ8"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Archival footage of Booker T. Washington High School." translatesAutoresizingMaskIntoConstraints="NO" id="bK4-ZK-xgG">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bK4-ZK-xgG">
                                 <rect key="frame" x="140" y="340" width="320" height="260"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="1GN-FX-wI6"/>
                                 </constraints>
+                                <string key="text">Archival film consisting of a long shot of Booker T. Washington High School.  Shot on July 31, 1965.
+
+Footage retrieved from Moving Image Research Collections' Local Television News Collection.  HD scan arranged by Greg Wilsbacher.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -502,35 +503,60 @@ Image retrieved from Booker T. Washington Yearbook, courtesy of John W. Goodwin<
             </objects>
             <point key="canvasLocation" x="2031" y="1529"/>
         </scene>
-        <!--CitationView-->
+        <!--Citations-->
         <scene sceneID="vm8-TW-xrn">
             <objects>
-                <viewController storyboardIdentifier="CitationView" autoresizesArchivedViewToFullSize="NO" title="CitationView" definesPresentationContext="YES" id="nZH-Uo-Ad2" customClass="PageItemController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CitationView" autoresizesArchivedViewToFullSize="NO" title="Citations" definesPresentationContext="YES" id="nZH-Uo-Ad2" customClass="PageItemController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Trb-b1-SlD"/>
                         <viewControllerLayoutGuide type="bottom" id="5Ox-Dx-aj7"/>
                     </layoutGuides>
-                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="4ye-0x-0NZ">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" id="4ye-0x-0NZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="506"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9p-vB-RIq">
-                                <rect key="frame" x="20" y="8" width="560" height="506"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="506"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Booker T. Washington High School opened its doors in September 1916. It was one of the few public schools in Columbia for African American students. The school originally offered first grade through ninth grade, later adding a tenth grade (1918), eleventh grade (1924), and twelfth grade (1947). Integration began in 1970, and within a year, the number of black and white students was nearly equal. The school closed in 1974, and the University of South Carolina purchased the property. USC demolished the main building in 1975 and the gym building in 1999. After extensive renovations, the university reopened the auditorium building in 2013. 
+                                <mutableString key="text">Photo of Union Station: Courtesy of South Carolina State Museum.
 
-Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” The State, June 15, 2013.</string>
+Photo of 827 Assembly Street: Courtesy of South Caroliniana Library.
+
+Photos of Celia Dial Saxon School and Palmetto Compress Building: Courtesy of Fabian Reddig.
+
+Photos of Booker T. Washington High School: Retrieved from Booker T. Washington Yearbook, courtesy of John W. Goodwin
+
+Archival footage of Booker T. Washington High School: Footage retrieved from Moving Image Research Collections' Local Television News Collection.  HD scan arranged by Greg Wilsbacher.
+
+Introduction Video for Booker T. Washington: Archival images retrieved from Booker T. Washington yearbook, courtesy of John W. Goodwin. Audio created by Emily Shea.
+
+Introduction Text for Booker T. Washington: Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” The State, June 15, 2013.
+
+Timeline Information: Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” The State, June 15, 2013.
+
+Jennifer F. Martin, Nicholas G. Theos, and Sarah A. Woodard, “Olympia Mill and Village,” Upper Richland County, South Carolina: Historical and Architectural Inventory (June 2002).
+
+National Register of Historic Places, Rosenwald School Building Program in South Carolina, 1917-1932. National Register # 64501033.
+
+Historic Columbia Foundation, “Civil Rights Timeline,” Columbia 63: Our Story Matters, 2013, http://www.columbiasc63.com/timeline/our-story-matters/.
+
+David Davis, “Turning the ‘Tide,” The Los Angeles Times, August 30, 2000.
+
+Ashley Nichole Bouknight, “‘Casualty of Progress’: The Ward One Community and Urban Renewal, Columbia, South Carolina, 1964-1974” (Master’s thesis, University of South Carolina, 2010).
+
+Staci Leanne Richey, “Variations on a Theme: Planning for the Elimination of Black Neighborhoods in Downtown Columbia, South Carolina, 1905-1970” (Master’s thesis, University of South Carolina, 2004).</mutableString>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Z9p-vB-RIq" firstAttribute="height" secondItem="4ye-0x-0NZ" secondAttribute="height" id="Ekg-tw-kmV"/>
-                            <constraint firstItem="Z9p-vB-RIq" firstAttribute="top" secondItem="Trb-b1-SlD" secondAttribute="bottom" constant="8" symbolic="YES" id="ISE-RA-RVd"/>
+                            <constraint firstItem="Z9p-vB-RIq" firstAttribute="top" secondItem="Trb-b1-SlD" secondAttribute="bottom" id="ISE-RA-RVd"/>
                             <constraint firstAttribute="centerX" secondItem="Z9p-vB-RIq" secondAttribute="centerX" id="JZS-OR-Hs1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Z9p-vB-RIq" secondAttribute="trailing" id="d8V-dh-RdX"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Z9p-vB-RIq" secondAttribute="bottom" id="gwv-ui-zY7"/>
-                            <constraint firstItem="Z9p-vB-RIq" firstAttribute="width" secondItem="4ye-0x-0NZ" secondAttribute="width" constant="-40" id="yes-NT-Ta8"/>
+                            <constraint firstItem="Z9p-vB-RIq" firstAttribute="width" secondItem="4ye-0x-0NZ" secondAttribute="width" id="yes-NT-Ta8"/>
                         </constraints>
                     </scrollView>
                     <extendedEdge key="edgesForExtendedLayout"/>
