@@ -24,7 +24,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Ward One" id="GC3-bM-7pV"/>
+                    <navigationItem key="navigationItem" title="Ward One" id="GC3-bM-7pV">
+                        <barButtonItem key="backBarButtonItem" title=" " id="G0F-4r-DeW"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="Zfb-7m-wpe" id="NDT-nO-FfM"/>
                         <segue destination="owJ-51-O6w" kind="show" identifier="PanoSegue" id="9vt-tD-i5M"/>
@@ -82,12 +84,12 @@
             </objects>
             <point key="canvasLocation" x="2037" y="149"/>
         </scene>
-        <!--Ward One-->
+        <!--Navigation Controller-->
         <scene sceneID="pyU-5Q-ofG">
             <objects>
-                <navigationController title="Ward One" automaticallyAdjustsScrollViewInsets="NO" id="QZf-Vj-Jvf" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QZf-Vj-Jvf" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kbf-U3-M3s">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="backToMap.png" backIndicatorTransitionMaskImage="backToMap.png" id="kbf-U3-M3s">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -139,78 +141,10 @@ Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” T
             </objects>
             <point key="canvasLocation" x="2031" y="826"/>
         </scene>
-        <!--ViewController1-->
-        <scene sceneID="xEH-nZ-sLc">
-            <objects>
-                <viewController storyboardIdentifier="ItemController1" title="ViewController1" id="bnT-Jc-s4Q" customClass="PageItemController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aQ3-NT-ZjX"/>
-                        <viewControllerLayoutGuide type="bottom" id="LSz-eF-Tsn"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="OWt-Ww-rH6">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BTW building, late 1960s--for heather.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5jk-3p-VTX">
-                                <rect key="frame" x="140" y="140" width="320" height="320"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="UUi-oA-Jlr"/>
-                                    <constraint firstAttribute="height" constant="320" id="a0x-Lr-UjF"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.89512310610000001" green="0.89512310610000001" blue="0.89512310610000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="centerY" secondItem="5jk-3p-VTX" secondAttribute="centerY" id="UCX-OF-g8h"/>
-                            <constraint firstAttribute="centerX" secondItem="5jk-3p-VTX" secondAttribute="centerX" id="anR-wa-KsK"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="view" destination="OWt-Ww-rH6" id="8eM-cd-pHQ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Lgd-oU-c5Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2037" y="1532"/>
-        </scene>
-        <!--ViewController2-->
-        <scene sceneID="oPM-th-LfI">
-            <objects>
-                <viewController storyboardIdentifier="ItemController2" title="ViewController2" id="u7q-BJ-5bW" customClass="PageItemController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VcX-uk-UTh"/>
-                        <viewControllerLayoutGuide type="bottom" id="WFk-re-BzR"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="OsG-K5-Kc9">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btw senior class officers, 1968b.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Gwx-Th-mQP">
-                                <rect key="frame" x="140" y="140" width="320" height="320"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="K7m-T0-nmg"/>
-                                    <constraint firstAttribute="height" constant="320" id="nvr-wi-2GI"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.89512310610000001" green="0.89512310610000001" blue="0.89512310610000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="Gwx-Th-mQP" secondAttribute="centerX" id="OyD-9w-SGr"/>
-                            <constraint firstAttribute="centerY" secondItem="Gwx-Th-mQP" secondAttribute="centerY" id="lyY-ja-QLE"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="view" destination="OsG-K5-Kc9" id="gIY-RQ-XPU"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qxc-te-sPY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2037" y="2216"/>
-        </scene>
-        <!--ItemController3-->
+        <!--ItemController4-->
         <scene sceneID="A6b-o1-hMl">
             <objects>
-                <viewController storyboardIdentifier="ItemController3" title="ItemController3" id="rlb-ZO-1yF" customClass="PageItemController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ItemController4" title="ItemController4" id="rlb-ZO-1yF" customClass="PageItemController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pZi-dy-6dx"/>
                         <viewControllerLayoutGuide type="bottom" id="cYW-xi-U6y"/>
@@ -219,20 +153,19 @@ Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” T
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="713 Assembly St.png" translatesAutoresizingMaskIntoConstraints="NO" id="ing-wW-QbQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video_preview_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ing-wW-QbQ">
                                 <rect key="frame" x="175" y="90" width="250" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="Rn1-WE-nYN"/>
                                     <constraint firstAttribute="width" constant="250" id="Vi6-OM-EJ8"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bK4-ZK-xgG">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Archival footage of Booker T. Washington High School." translatesAutoresizingMaskIntoConstraints="NO" id="bK4-ZK-xgG">
                                 <rect key="frame" x="140" y="340" width="320" height="260"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="1GN-FX-wI6"/>
                                 </constraints>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -260,7 +193,7 @@ Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” T
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aLv-kP-6et" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2037" y="2904"/>
+            <point key="canvasLocation" x="2031" y="3646"/>
         </scene>
         <!--Video Controller-->
         <scene sceneID="57p-1O-5aR">
@@ -291,7 +224,7 @@ Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” T
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2723" y="2904"/>
+            <point key="canvasLocation" x="2719" y="3646"/>
         </scene>
         <!--Booker T. Washington High School-->
         <scene sceneID="4Oi-fd-v0e">
@@ -329,11 +262,10 @@ Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” T
             </objects>
             <point key="canvasLocation" x="2157" y="-662"/>
         </scene>
-        <!--ItemController4-->
+        <!--ItemController5-->
         <scene sceneID="DzK-O0-08P">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aR1-fW-ty7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="ItemController4" title="ItemController4" id="gdB-Px-dgZ" customClass="PageItemController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ItemController5" title="ItemController5" id="gdB-Px-dgZ" customClass="PageItemController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9iU-is-U9P"/>
                         <viewControllerLayoutGuide type="bottom" id="UnL-E4-0Yl"/>
@@ -342,7 +274,7 @@ Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” T
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="713 Assembly St.png" translatesAutoresizingMaskIntoConstraints="NO" id="g2A-3T-Q07">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video_preview_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="g2A-3T-Q07">
                                 <rect key="frame" x="175" y="90" width="250" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="MGc-ub-EGm"/>
@@ -355,7 +287,10 @@ Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” T
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="hbi-C7-FNl"/>
                                 </constraints>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Archival images of Booker T. Washington High School circa 1950s and 60s and audio introductions of Booker T. Washington High School graduates recorded during first collaborative meeting with course members. Archival images include: Booker T. Washington High School circa late 1960s, Booker T. Washington Class of 1951, and Booker T. Washington Senior Class Officers circa 1968
+
+Archival images retrieved from Booker T. Washington yearbook, courtesy of John W. Goodwin
+Audio created by Emily Shea</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -383,8 +318,9 @@ Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” T
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aR1-fW-ty7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2037" y="3566"/>
+            <point key="canvasLocation" x="2031" y="4308"/>
         </scene>
         <!--Second Video Controller-->
         <scene sceneID="TgZ-qg-46W">
@@ -415,13 +351,160 @@ Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” T
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2723" y="3598"/>
+            <point key="canvasLocation" x="2719" y="4308"/>
+        </scene>
+        <!--ItemController3-->
+        <scene sceneID="elT-MT-gGS">
+            <objects>
+                <viewController storyboardIdentifier="ItemController3" title="ItemController3" id="O4U-eY-KCZ" customClass="PageItemController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AAH-Ww-Fss"/>
+                        <viewControllerLayoutGuide type="bottom" id="7JF-Wa-2b0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b0X-20-3pE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btw senior class officers, 1968b.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YC4-YT-u4t">
+                                <rect key="frame" x="175" y="90" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="IPE-Ea-Y2x"/>
+                                    <constraint firstAttribute="height" constant="250" id="UQh-8R-M6I"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mRE-wu-Bro">
+                                <rect key="frame" x="140" y="340" width="320" height="260"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="5RO-Xy-eYk"/>
+                                </constraints>
+                                <string key="text">Senior class officers of Booker T. Washington High School, class of 1968
+
+Image retrieved from Booker T. Washington Yearbook, courtesy of John W. Goodwin</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mRE-wu-Bro" firstAttribute="top" secondItem="YC4-YT-u4t" secondAttribute="bottom" id="0Fo-M0-M7h"/>
+                            <constraint firstItem="mRE-wu-Bro" firstAttribute="centerX" secondItem="YC4-YT-u4t" secondAttribute="centerX" id="GPz-ZG-1sj"/>
+                            <constraint firstAttribute="centerY" secondItem="YC4-YT-u4t" secondAttribute="centerY" constant="85" id="Rhk-su-MQv"/>
+                            <constraint firstAttribute="centerX" secondItem="YC4-YT-u4t" secondAttribute="centerX" id="gfD-Hs-SgB"/>
+                            <constraint firstItem="7JF-Wa-2b0" firstAttribute="top" secondItem="mRE-wu-Bro" secondAttribute="bottom" id="izV-UR-AiL"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="41v-fn-Wck" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2031" y="2954"/>
+        </scene>
+        <!--ItemController2-->
+        <scene sceneID="Vaw-fy-52w">
+            <objects>
+                <viewController storyboardIdentifier="ItemController2" title="ItemController2" id="2av-rq-3Sd" customClass="PageItemController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vfb-eA-MjD"/>
+                        <viewControllerLayoutGuide type="bottom" id="hXx-Q0-Hz7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bYN-lb-0L5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BTW building, late 1960s--for heather.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bTO-wm-3d6">
+                                <rect key="frame" x="175" y="90" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="Lfg-V2-6E9"/>
+                                    <constraint firstAttribute="width" constant="250" id="SsB-2l-evf"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vH-xg-BBf">
+                                <rect key="frame" x="140" y="340" width="320" height="260"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="Pxf-4Y-5VL"/>
+                                </constraints>
+                                <string key="text">Booker T. Washington building, late 1960s
+
+Image retrieved from Booker T. Washington Yearbook, courtesy of John W. Goodwin</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hXx-Q0-Hz7" firstAttribute="top" secondItem="9vH-xg-BBf" secondAttribute="bottom" id="Jkg-oI-73d"/>
+                            <constraint firstAttribute="centerX" secondItem="bTO-wm-3d6" secondAttribute="centerX" id="ZPe-fW-MRe"/>
+                            <constraint firstAttribute="centerY" secondItem="bTO-wm-3d6" secondAttribute="centerY" constant="85" id="lXl-t1-105"/>
+                            <constraint firstItem="9vH-xg-BBf" firstAttribute="top" secondItem="bTO-wm-3d6" secondAttribute="bottom" id="lZT-Vx-DEh"/>
+                            <constraint firstItem="9vH-xg-BBf" firstAttribute="centerX" secondItem="bTO-wm-3d6" secondAttribute="centerX" id="qT2-dC-OBi"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0fl-KF-jG3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2031" y="2239"/>
+        </scene>
+        <!--ItemController1-->
+        <scene sceneID="xPk-5c-VTd">
+            <objects>
+                <viewController storyboardIdentifier="ItemController1" title="ItemController1" id="5BI-bN-xkl" customClass="PageItemController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wDh-WK-t2j"/>
+                        <viewControllerLayoutGuide type="bottom" id="OKk-Gm-E6e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wnG-Ar-w4F">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BTW Building in Color 1969_.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yYO-sl-8kh">
+                                <rect key="frame" x="175" y="90" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="A2c-eJ-4to"/>
+                                    <constraint firstAttribute="height" constant="250" id="ZRt-nO-Yv6"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="htW-jJ-vzc">
+                                <rect key="frame" x="140" y="340" width="320" height="260"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="f11-Qo-CDo"/>
+                                </constraints>
+                                <string key="text">Booker T. Washington High School circa 1969 in color
+
+Image retrieved from Booker T. Washington Yearbook, courtesy of John W. Goodwin</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="htW-jJ-vzc" firstAttribute="centerX" secondItem="yYO-sl-8kh" secondAttribute="centerX" id="UsY-Fw-WAI"/>
+                            <constraint firstItem="htW-jJ-vzc" firstAttribute="top" secondItem="yYO-sl-8kh" secondAttribute="bottom" id="guR-D8-FoT"/>
+                            <constraint firstAttribute="centerY" secondItem="yYO-sl-8kh" secondAttribute="centerY" constant="85" id="hyo-HE-zTG"/>
+                            <constraint firstAttribute="centerX" secondItem="yYO-sl-8kh" secondAttribute="centerX" id="kVG-ZT-j50"/>
+                            <constraint firstItem="OKk-Gm-E6e" firstAttribute="top" secondItem="htW-jJ-vzc" secondAttribute="bottom" id="qBS-1t-bOu"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6fA-Bo-LX8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2031" y="1529"/>
         </scene>
     </scenes>
     <resources>
-        <image name="713 Assembly St.png" width="1178" height="804"/>
+        <image name="BTW Building in Color 1969_.jpg" width="1217" height="1027"/>
         <image name="BTW building, late 1960s--for heather.jpg" width="1909" height="1258"/>
+        <image name="backToMap.png" width="30" height="28"/>
         <image name="btw senior class officers, 1968b.jpg" width="1443" height="1045"/>
         <image name="play_2.png" width="64" height="64"/>
+        <image name="video_preview_1.png" width="927" height="693"/>
+        <image name="video_preview_2.png" width="924" height="519"/>
     </resources>
 </document>

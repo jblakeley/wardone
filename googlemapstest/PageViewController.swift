@@ -145,7 +145,7 @@ class PageViewController: UIViewController, UIPageViewControllerDataSource {
     }
     
     func populateControllersArray() {
-        for i in 0...4 {
+        for i in 0...5 {
 
             let controller = storyboard!.instantiateViewControllerWithIdentifier("ItemController\(i)") as! PageItemController
             controller.itemIndex = i
