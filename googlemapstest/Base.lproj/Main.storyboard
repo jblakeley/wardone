@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QZf-Vj-Jvf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QZf-Vj-Jvf">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -26,6 +26,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Ward One" id="GC3-bM-7pV">
                         <barButtonItem key="backBarButtonItem" title=" " id="G0F-4r-DeW"/>
+                        <barButtonItem key="rightBarButtonItem" image="info.png" id="MjI-ag-dTM">
+                            <connections>
+                                <segue destination="nZH-Uo-Ad2" kind="show" id="9IF-GZ-7J0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="Zfb-7m-wpe" id="NDT-nO-FfM"/>
@@ -260,7 +265,7 @@ Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” T
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yn0-Lj-Mqm" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2157" y="-662"/>
+            <point key="canvasLocation" x="2553" y="-638"/>
         </scene>
         <!--ItemController5-->
         <scene sceneID="DzK-O0-08P">
@@ -497,12 +502,52 @@ Image retrieved from Booker T. Washington Yearbook, courtesy of John W. Goodwin<
             </objects>
             <point key="canvasLocation" x="2031" y="1529"/>
         </scene>
+        <!--CitationView-->
+        <scene sceneID="vm8-TW-xrn">
+            <objects>
+                <viewController storyboardIdentifier="CitationView" autoresizesArchivedViewToFullSize="NO" title="CitationView" definesPresentationContext="YES" id="nZH-Uo-Ad2" customClass="PageItemController" customModule="googlemapstest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Trb-b1-SlD"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Ox-Dx-aj7"/>
+                    </layoutGuides>
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="4ye-0x-0NZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="506"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9p-vB-RIq">
+                                <rect key="frame" x="20" y="8" width="560" height="506"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Booker T. Washington High School opened its doors in September 1916. It was one of the few public schools in Columbia for African American students. The school originally offered first grade through ninth grade, later adding a tenth grade (1918), eleventh grade (1924), and twelfth grade (1947). Integration began in 1970, and within a year, the number of black and white students was nearly equal. The school closed in 1974, and the University of South Carolina purchased the property. USC demolished the main building in 1975 and the gym building in 1999. After extensive renovations, the university reopened the auditorium building in 2013. 
+
+Clif LeBlanc, “Hundreds return home to Columbia’s Booker T. Washington,” The State, June 15, 2013.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Z9p-vB-RIq" firstAttribute="height" secondItem="4ye-0x-0NZ" secondAttribute="height" id="Ekg-tw-kmV"/>
+                            <constraint firstItem="Z9p-vB-RIq" firstAttribute="top" secondItem="Trb-b1-SlD" secondAttribute="bottom" constant="8" symbolic="YES" id="ISE-RA-RVd"/>
+                            <constraint firstAttribute="centerX" secondItem="Z9p-vB-RIq" secondAttribute="centerX" id="JZS-OR-Hs1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z9p-vB-RIq" secondAttribute="trailing" id="d8V-dh-RdX"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Z9p-vB-RIq" secondAttribute="bottom" id="gwv-ui-zY7"/>
+                            <constraint firstItem="Z9p-vB-RIq" firstAttribute="width" secondItem="4ye-0x-0NZ" secondAttribute="width" constant="-40" id="yes-NT-Ta8"/>
+                        </constraints>
+                    </scrollView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fcr-ab-cyM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1679" y="-932"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BTW Building in Color 1969_.jpg" width="1217" height="1027"/>
         <image name="BTW building, late 1960s--for heather.jpg" width="1909" height="1258"/>
         <image name="backToMap.png" width="30" height="28"/>
         <image name="btw senior class officers, 1968b.jpg" width="1443" height="1045"/>
+        <image name="info.png" width="22" height="22"/>
         <image name="play_2.png" width="64" height="64"/>
         <image name="video_preview_1.png" width="927" height="693"/>
         <image name="video_preview_2.png" width="924" height="519"/>
